@@ -45,6 +45,13 @@
 
 
 	
+		
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+
+		
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+	
 
 	<script>
 		var argonConfig = {
@@ -68,7 +75,7 @@
 		}
 	</script>
 	<script>
-		var darkmodeAutoSwitch = "false";
+		var darkmodeAutoSwitch = "system";
 		function setDarkmode(enable){
 			if (enable == true){
 				$("html").addClass("darkmode");
@@ -205,7 +212,7 @@
 							<ul class='navbar-nav navbar-nav-hover align-items-lg-center'>
 								
 										<li class='nav-item'>
-											<a href='/home' class='nav-link' >
+											<a href='/' class='nav-link' >
 												<i class='ni ni-book-bookmark d-lg-none'></i>
 												<span class='nav-link-inner--text'>首页</span>
 											</a>
@@ -285,9 +292,9 @@
 	
 	<div id="banner_container" class="banner-container container text-center">
 		
-			<div class="banner-title text-white"><span class="banner-title-inner">hexo</span>
+			<div class="banner-title text-white" data-text="学以报国 不负春光" data-interval=""><span class="banner-title-inner">&nbsp;</span>
 		
-		</div>
+		<span class="banner-subtitle d-block">一位学子的自留地，在这里遇见青春与梦想</span></div>
 	</div>
 	
 		<style>
@@ -313,7 +320,7 @@
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
-			opacity: 1;
+			opacity: 0.7;
 			transition: opacity .5s ease;
 		}
 		html.darkmode #content:before{
@@ -337,7 +344,7 @@
 				transition: opacity .5s ease;
 			}
 			html.darkmode #content:after {
-				opacity: 1;
+				opacity: 0.7;
 			}
 			html.darkmode #content:before {
 				opacity: 0;
@@ -498,7 +505,7 @@
 								</div>      
 								<div class="site-state-item site-state-tags">
 									<a data-toggle="modal" data-target="#blog_tags">
-										<span class="site-state-item-count">0</span>
+										<span class="site-state-item-count">1</span>
 										<span class="site-state-item-name">标签</span>
 									</a>
 								</div>
@@ -571,7 +578,7 @@
 				</button>
 			</div>
 			<div class="modal-body">
-				
+				<a class="badge badge-secondary tag" href="/tags/fsfsdfsd-fsdfsdfsdf/" rel="tag">fsfsdfsd;fsdfsdfsdf <span class="tag-num">1</span></a>
 			</div>
 		</div>
 	</div>
@@ -584,7 +591,7 @@
 		
 		
 				
-	<article class="post card bg-white shadow-sm border-0 ">
+	<article class="post card bg-white shadow-sm border-0 post-preview">
 	<header class="post-header text-center">
 		
 		<a class="post-title" href="/2022/07/09/ddfksdfhksjd/">ddfksdfhksjd</a>
@@ -639,7 +646,7 @@
 </article>
 
 
-	<article class="post card bg-white shadow-sm border-0 ">
+	<article class="post card bg-white shadow-sm border-0 post-preview">
 	<header class="post-header text-center">
 		
 		<a class="post-title" href="/2022/07/09/test/">test</a>
@@ -694,7 +701,7 @@
 </article>
 
 
-	<article class="post card bg-white shadow-sm border-0 ">
+	<article class="post card bg-white shadow-sm border-0 post-preview">
 	<header class="post-header text-center">
 		
 		<a class="post-title" href="/2022/07/08/hello-world/">Hello World</a>
@@ -703,7 +710,7 @@
 						
 						<div class="post-meta-detail post-meta-detail-time">
 							<i class="fa fa-clock-o" aria-hidden="true"></i>
-							<time title="发布于 2022-7-8 23:13:15 | 编辑于 2022-7-9 0:27:24">2022-7-8 23:13
+							<time title="发布于 2022-7-8 22:22:22 | 编辑于 2022-7-9 7:55:11">2022-7-8 22:22
 							</time>
 						</div>
 					
@@ -745,6 +752,11 @@
 		
 	</div>
 
+	
+		<div class="post-tags">
+			<i class="fa fa-tags" aria-hidden="true"></i>
+			<a class="tag badge badge-secondary post-meta-detail-tag -none-link" href="/tags/fsfsdfsd-fsdfsdfsdf/" rel="tag">fsfsdfsd;fsdfsdfsdf</a>
+		</div>
 	
 </article>
 
