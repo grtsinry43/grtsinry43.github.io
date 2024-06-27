@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://blog.grtsinry43.com/"/>
+  
+  <link rel="canonical" href="https://blog.grtsinry43.com/2024/06/27/kubernetes-quick-start/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -35,19 +35,23 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="Grtsinry43’s Blog" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>Grtsinry43’s Blog</title>
-  <meta name="keywords" content="写作,开发,生活,青春,梦想">
-  <meta desc name="description" content="一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待 - Grtsinry43 - Grtsinry43’s Blog">
+  <title>学习分享｜Kubernetes快速上手，快速了解及开始使用 - Grtsinry43’s Blog</title>
+  <meta name="keywords" content="kubernetes,linux,运维,写作,开发,生活,青春,梦想">
+  <meta desc name="description" content="最近感觉 K8s 挺火的，也许是时下比较热门的技术栈了，学习过程比较曲折复杂，分享一下自己的学习过程，从快速入门，到一些深入的使用 - Grtsinry43 - Grtsinry43’s Blog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="Grtsinry43’s Blog">
-<meta property="og:url" content="https://blog.grtsinry43.com/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学习分享｜Kubernetes快速上手，快速了解及开始使用">
+<meta property="og:url" content="https://blog.grtsinry43.com/2024/06/27/kubernetes-quick-start/index.html">
 <meta property="og:site_name" content="Grtsinry43’s Blog">
-<meta property="og:description" content="一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待">
+<meta property="og:description" content="最近感觉 K8s 挺火的，也许是时下比较热门的技术栈了，学习过程比较曲折复杂，分享一下自己的学习过程，从快速入门，到一些深入的使用">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2024-06-27T11:09:46.000Z">
+<meta property="article:modified_time" content="2024-06-27T14:08:15.096Z">
 <meta property="article:author" content="Grtsinry43">
-<meta property="article:tag" content="写作,开发,生活,青春,梦想">
+<meta property="article:tag" content="kubernetes">
+<meta property="article:tag" content="linux">
+<meta property="article:tag" content="运维">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2326,7 +2330,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin end-->
     <!-- front-matter body_begin begin -->
     <!-- front-matter body_begin end -->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2797,7 +2801,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="full" class='cover-wrapper  dock' style="display: ;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2857,7 +2861,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   </div>
 </div>
 
-        <div id="scroll-down" style="display: ;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
+        <div id="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
       </div>
     
   
@@ -2867,43 +2871,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
   <link itemprop="mainEntityOfPage" href="https://blog.grtsinry43.com/2024/06/27/kubernetes-quick-start/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Grtsinry43’s Blog">
@@ -2913,407 +2881,427 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/06/27/kubernetes-quick-start/"  itemprop="url">
+    
+    
+      <h1 class="title" itemprop="name headline">
         学习分享｜Kubernetes快速上手，快速了解及开始使用
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>最近感觉 K8s 挺火的，也许是时下比较热门的技术栈了，学习过程比较曲折复杂，分享一下自己的学习过程，从快速入门，到一些深入的使用</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+      </h1>
+      <div class='new-meta-box'>
         
           
-          <a class='avatar' href='/'><img src='https://dogeoss.grtsinry43.com/img/author.jpeg'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://dogeoss.grtsinry43.com/img/author.jpeg">
-            <meta itemprop="name" content="Grtsinry43">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-06-27T19:09:46+08:00">2024-06-27</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/">技术学习</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/" itemprop="url"><span itemprop="name">技术学习</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/06/27/kubernetes-quick-start/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://dogeoss.grtsinry43.com/img/author.jpeg" class="lazyload" data-srcset="https://dogeoss.grtsinry43.com/img/author.jpeg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">Grtsinry43</p>
+  </a>
 </div>
 
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-06-27T19:09:46+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2024年6月27日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span data-path="/2024/06/27/kubernetes-quick-start/" class="waline-pageview-count">
+        <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
+      </span>
+      
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
+        
+          
+            
+<div class="new-meta-item comments-count">
+   
+  
+  <a href="/2024/06/27/kubernetes-quick-start/#comments">
+    <i class="fa-solid fa-comment-dots fa-fw"></i>
+    <p>
+      <span data-path="/2024/06/27/kubernetes-quick-start/" class="waline-comment-count">
+        <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
+      </span> 
+       
+        <span class="leancloud-comments-count">&nbsp;条评论</span> 
+       
+    </p>
+  </a>
+</div>
+
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：1.9k 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：7 分钟</p>
+    </a>
+  </div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <p>最近感觉 K8s 挺火的，也许是时下比较热门的技术栈了，学习过程比较曲折复杂，分享一下自己的学习过程，从快速入门，到一些深入的使用</p>
+<span id="more"></span>
+
+<h2 id="简要介绍"><a href="#简要介绍" class="headerlink" title="简要介绍"></a>简要介绍</h2><h3 id="Kubernetes-简介"><a href="#Kubernetes-简介" class="headerlink" title="Kubernetes 简介"></a>Kubernetes 简介</h3><p>Kubernetes，通常简称为 “k8s”，是一个开源平台，用于自动化部署、扩展和管理容器化应用程序。它允许您在一个计算机集群中管理容器化应用程序，提供部署、维护和扩展的机制。</p>
+<p>听说过一个说法，docker 的图标是载满集装箱的鲸鱼，而 k8s 的图标是一个带有舵轮的蓝色八边形，代表着它在容器编排领域的导航和控制作用，象征着 Kubernetes 能够帮助用户高效地管理和指导容器化应用程序的部署和运行，驾驶着驶向远方（中二 ing）。</p>
+<p>docker 更多用于将应用程序及其依赖项打包到一个轻量级、可移植的容器中，解决的是配置环境和实现容器化，而 Kubernetes 提供了高可用性、负载均衡、自动扩展和滚动更新等功能，适用于生产环境，使管理大规模容器化应用程序变得更加高效和可靠。Kubernetes 适用于需要自动化管理、扩展和部署多个容器的复杂应用场景。</p>
+<h3 id="与-docker-compose-的比较"><a href="#与-docker-compose-的比较" class="headerlink" title="与 docker-compose 的比较"></a>与 docker-compose 的比较</h3><ol>
+<li><p>集群管理和多节点支持<br>Kubernetes：设计用于管理一个跨多个节点（机器）的容器集群。它可以自动分配和调度容器到集群中的不同节点上，确保高可用性和资源的最佳利用。<br>Docker Compose：主要用于单个节点上的容器编排。虽然可以通过 Swarm 模式在多个节点上运行，但其功能和扩展性不如 Kubernetes 强大。</p>
+</li>
+<li><p>自动化和自我修复<br>Kubernetes：提供了自动化的容器部署、扩展和自我修复能力。它可以自动重新启动失败的容器、替换被损坏的节点、自动扩展应用实例数量等。<br>Docker Compose：缺乏自动化的修复和扩展机制。需要手动管理容器的状态和扩展。</p>
+</li>
+<li><p>服务发现和负载均衡<br>Kubernetes：内置了强大的服务发现和负载均衡功能。服务可以通过 DNS 名称互相访问，Kubernetes 会自动在各个 Pod 之间进行负载均衡。<br>Docker Compose：服务发现和负载均衡功能较为基础，需要依赖外部工具或手动配置。</p>
+</li>
+<li><p>持久化存储和卷管理<br>Kubernetes：提供了丰富的持久化存储选项和卷管理功能，包括 PersistentVolume 和 PersistentVolumeClaim，支持多种存储后端（如 NFS、Ceph、AWS EBS 等）。<br>Docker Compose：支持卷的基本功能，但管理持久化存储的功能较为简单，且不具备 Kubernetes 那样的存储抽象和集成能力。</p>
+</li>
+<li><p>安全性和访问控制<br>Kubernetes：提供了强大的安全和访问控制机制，包括基于角色的访问控制（RBAC）、网络策略、Pod 安全策略等，可以细粒度地管理用户和应用的权限。<br>Docker Compose：安全性和访问控制较为基础，需要依赖外部工具或额外的配置来实现类似的功能。</p>
+</li>
+<li><p>扩展性和生态系统<br>Kubernetes：具有丰富的扩展性和庞大的生态系统，支持 Helm Charts（包管理）、Operator（运维自动化）、CRD（自定义资源）等，可以轻松集成各种第三方工具和插件。<br>Docker Compose：相对简单，功能较为有限，扩展性不如 Kubernetes 强大。</p>
+</li>
+<li><p>社区和支持<br>Kubernetes：由 CNCF（Cloud Native Computing Foundation）维护，拥有庞大的社区支持和活跃的开发生态。广泛应用于生产环境，得到了各大云服务商的全面支持。<br>Docker Compose：主要由 Docker 社区维护，虽然也有不少用户，但在生产环境中的应用和支持程度不如 Kubernetes。</p>
+</li>
+</ol>
+<h2 id="安装与快速上手"><a href="#安装与快速上手" class="headerlink" title="安装与快速上手"></a>安装与快速上手</h2><blockquote>
+<p>这里为了在本地演示方便，使用的是本地的 Archlinux</p>
+</blockquote>
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>首先安装必要的组件</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S kubeadm kubelet kubectl</span><br></pre></td></tr></table></figure>
+
+<p>这里要注意，进行下一步之前，由于 k8s 不支持 swap（为了保证容器运行），需要关闭 swap，以下命令适用于临时关闭，如果不再使用 swap，在 <code>/etc/fstab</code> 注释掉对应行即可</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo swapoff -a</span><br></pre></td></tr></table></figure>
+
+<p>随后启动服务，当然也可以设置开机启动（enable）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl start kubelet</span><br></pre></td></tr></table></figure>
+
+<p>Kubernetes 需要一个容器运行时来实际运行容器。最常用的选择是 <code>containerd</code> 和 <code>CRI-O</code>。这里我们选择使用 <code>containerd</code>。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo pacman -S containerd</span><br><span class="line">sudo systemctl start containerd</span><br></pre></td></tr></table></figure>
+
+<h3 id="系统配置"><a href="#系统配置" class="headerlink" title="系统配置"></a>系统配置</h3><p>Kubernetes 需要一些特定的内核模块和系统参数来正常工作。</p>
+<ol>
+<li><p><strong>加载必要的内核模块</strong>：</p>
+<ul>
+<li><code>overlay</code> 和 <code>br_netfilter</code> 是两个内核模块，分别用于文件系统层和网络层。</li>
+<li>创建文件 <code>/etc/modules-load.d/k8s.conf</code> 系统启动时将会自动加载这些模块</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">overlay</span><br><span class="line">br_netfilter</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>然后手动加载这些模块：</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo modprobe overlay</span><br><span class="line">sudo modprobe br_netfilter</span><br></pre></td></tr></table></figure></li>
+<li><p><strong>设置 sysctl 参数</strong>：</p>
+<ul>
+<li><p>Kubernetes 需要一些特定的网络配置</p>
+</li>
+<li><p>创建文件 <code>/etc/sysctl.d/k8s.conf</code></p>
+<p>前两个是使得桥接的流量（例如虚拟机或容器之间的流量）可以被 iptables 的规则所处理</p>
+<p>最后一个是启用 IPv4 在接口之间的转发</p>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">net.bridge.bridge-nf-call-iptables = 1</span><br><span class="line">net.bridge.bridge-nf-call-ip6tables = 1</span><br><span class="line">net.ipv4.ip_forward = 1</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>然后应用这些参数：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo sysctl --system</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h3 id="集群配置"><a href="#集群配置" class="headerlink" title="集群配置"></a>集群配置</h3><ol>
+<li>初始化控制平面：<br>控制平面是 Kubernetes 集群的核心部分，负责管理所有集群活动。使用以下命令初始化控制平面：</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo kubeadm init --pod-network-cidr=10.244.0.0/16</span><br></pre></td></tr></table></figure>
+
+<p><code>--pod-network-cidr</code> 参数指定 Pod 网络的 CIDR（Classless Inter-Domain Routing，无类别域间路由）。这里我们使用 10.244.0.0/16。</p>
+<blockquote>
+<p>为什么选这个地址？</p>
+<ol>
+<li>大多数人使用的习惯</li>
+<li>选择 10.244.0.0/16 范围，旨在最小化与集群节点可能连接的其他网络的 IP 地址冲突的风险。10.0.0.0/8 的私有网络空间很大，允许灵活选择不太可能与组织现有网络配置重叠的子网。（比如我所在学校的校园网的内网网段就有冲突部分，10.244.xxx 更不容易冲突）</li>
+</ol>
+</blockquote>
+<p>这个命令完成需要一些时间哦</p>
+<p>该命令完成后会输出一个 kubeadm join 命令，用于将工作节点加入集群。</p>
+<p><img src="/home/grtsinry43/.config/Typora/typora-user-images/image-20240627203321509.png" class="lazyload" data-srcset="/home/grtsinry43/.config/Typora/typora-user-images/image-20240627203321509.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240627203321509"></p>
+<ol start="2">
+<li><p>为用户配置 kubectl：</p>
+<p>按照上一步的提示创建 .kube 目录并复制配置文件：</p>
+</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mkdir -p $HOME/.kube</span><br><span class="line">sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config</span><br><span class="line">sudo chown $(id -u):$(id -g) $HOME/.kube/config</span><br></pre></td></tr></table></figure>
+
+
+
+<ol start="3">
+<li><p>安装 Pod 网络插件</p>
+<p>Pod 网络插件使得 Pod 之间可以通信。我们选择使用 <code>Flannel</code> 作为网络插件。</p>
+</li>
+</ol>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li><p>将工作节点加入集群<br>在每个工作节点上运行在 kubeadm init 步骤中输出的 kubeadm join 命令。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo kubeadm join &lt;control-plane-host&gt;: &lt;control-plane-port&gt; --token &lt;token&gt; --discovery-token-ca-cert-hash sha256: &lt;hash&gt;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p><img src="/home/grtsinry43/.config/Typora/typora-user-images/image-20240627214438919.png" class="lazyload" data-srcset="/home/grtsinry43/.config/Typora/typora-user-images/image-20240627214438919.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240627214438919"></p>
+<h3 id="一些常用命令"><a href="#一些常用命令" class="headerlink" title="一些常用命令"></a>一些常用命令</h3><ol>
+<li><p>查看所有节点的状态：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kubectl get nodes</span><br></pre></td></tr></table></figure></li>
+<li><p>查看所有命名空间中的 Pod 状态：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kubectl get pods --all-namespaces</span><br></pre></td></tr></table></figure></li>
+<li><p>查看特定 Pod 的日志：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kubectl logs &lt;pod-name&gt;</span><br></pre></td></tr></table></figure>
+
+
+<p>​      </p>
+</li>
+</ol>
+<h2 id="实际演练"><a href="#实际演练" class="headerlink" title="实际演练"></a>实际演练</h2><p>让我们搞一个简单的示例项目来实际应用一下叭~</p>
+<p>这个例子包含一个前端（ Nginx 提供静态文件）和一个后端（ Flask 提供 API），帮助我们了解如何在 Kubernetes 上部署和管理多组件应用程序。</p>
+<hr>
+<p>挖坑，再研究研究之后更新（悲）</p>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+        
+  <div class="related_posts">
+    <section class='header'>
+      <i class="fa-solid fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
+    </section>
+    <section class='body'>
+      <div class="vlts-rps"><a class="item" href="/2024/06/09/learn-share-1/" title="学习分享｜跨域解决、安卓开发探索、油猴脚本探索" rel="bookmark "><span class="title">学习分享｜跨域解决、安卓开发探索、油猴脚本探索</span><span class="excerpt">最近学习的一些内容，包括跨域问题及其解决方案，安卓开发的简单探索，OpenAI的api做了个小插件</span></a></div></section></div>
+      
+      <!-- 版权声明组件 -->
+      
+        
+          
+          <div class="copyright license">
+            <div class="license-title">学习分享｜Kubernetes快速上手，快速了解及开始使用</div>
+            <div class="license-link"><a href="https://blog.grtsinry43.com/2024/06/27/kubernetes-quick-start/">https://blog.grtsinry43.com/2024/06/27/kubernetes-quick-start/</a>
+            </div>
+            <div class="license-meta">
+              <div class="license-meta-item">
+                <div class="license-meta-title">本文作者</div>
+                <div class="license-meta-text">Grtsinry43</div>
+              </div>
+              <div class="license-meta-item">
+                <div class="license-meta-title">发布于</div>
+                <div class="license-meta-text">2024年6月27日</div>
+              </div>
+              
+              
+              <div class="license-meta-item">
+                <div class="license-meta-title">许可协议</div>
+                <div class="license-meta-text"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh#" target="_blank">CC BY-NC-SA 4.0</a></div>
+              </div>
+            </div>
+            <div class="license-statement">署名-非商业性使用-相同方式共享 4.0 国际。</div>
           </div>
         
       
+      <!-- 打赏组件 -->
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.grtsinry43.com/2024/06/09/less-media-variable/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Grtsinry43’s Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Grtsinry43’s Blog">
-    <meta itemprop="description" content="一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待">
-  </span>
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-06-27T22:08:15+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2024年6月27日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/kubernetes/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>kubernetes</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/linux/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>linux</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E8%BF%90%E7%BB%B4/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>运维</p></a></div>
+  <span hidden itemprop="keywords">kubernetes linux 运维</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.grtsinry43.com/2024/06/27/kubernetes-quick-start/&title=学习分享｜Kubernetes快速上手，快速了解及开始使用 - Grtsinry43’s Blog&summary=最近感觉 K8s 挺火的，也许是时下比较热门的技术栈了，学习过程比较曲折复杂，分享一下自己的学习过程，从快速入门，到一些深入的使用"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://blog.grtsinry43.com/2024/06/27/kubernetes-quick-start/&title=学习分享｜Kubernetes快速上手，快速了解及开始使用 - Grtsinry43’s Blog&summary=最近感觉 K8s 挺火的，也许是时下比较热门的技术栈了，学习过程比较曲折复杂，分享一下自己的学习过程，从快速入门，到一些深入的使用"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://blog.grtsinry43.com/2024/06/27/kubernetes-quick-start/&title=学习分享｜Kubernetes快速上手，快速了解及开始使用 - Grtsinry43’s Blog&summary=最近感觉 K8s 挺火的，也许是时下比较热门的技术栈了，学习过程比较曲折复杂，分享一下自己的学习过程，从快速入门，到一些深入的使用"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        
+        <div class='hoverbox'>
+          <a class='share'><img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/wechat.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
+          <div class='target'>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATgAAAE4CAAAAADqFLC2AAADpUlEQVR42u3aS3bbQAwEQN3/0skJ9DhoYCREKe78oUgUvWij+frjiI4XAnDgwIFzgAO3BO4VHm8/+OH3ns5/+tzT65yeV50XHDhw4MCBAwduG1w6wO3vd2G6Dw4cOHDgwIEDB+5fgXsMgIc3GgfMh4Gnf788Lzhw4MCBAwcO3I/BVQPq1IPqPhhw4MCBAwcOHDhwWVFcDbbdRSg4cODAgQMHDtyvwqUv+J3eSDVIpwF8fZMPDhw4cODAgQM3BDe9GNz+dTwvOHDgwIEDBw7cErju0Q3AUw8sDbjlecGBAwcOHDhw4JbApQGxCvgEV11EVu+7Ox84cODAgQMHDtw2uGrRezr4VGE8dX71c9/+HBw4cODAgQMHbincdOFbXWB+CiwO0ODAgQMHDhw4cMvg0kVjNShPFdXVwD1WuIMDBw4cOHDgwC2BSwdKv18twtPzbhXU4MCBAwcOHDhw2+C6RfPpeVOfc6sQf7xfcODAgQMHDhy4JXBpUTu9qOwOejsYgwMHDhw4cODAbYM7HSBdcFbhugvU6YL78T8HcODAgQMHDhy4L8Glg6ZBOC2cp4Nu+gcDDhw4cODAgQO3Da4afLtFcxpEy4vHocUoOHDgwIEDBw7cNrhbhXJ5QXipwK6eFxfS4MCBAwcOHDhwH4abKopPA281iE4V0N05wYEDBw4cOHDgtsOlL+ali8VuUK0W3dUC+tqLheDAgQMHDhw4cJfgul/fHigNsN0iHhw4cODAgQMHbitcOmha9KYLyinQcoAHBw4cOHDgwIFbAjd94SmYdKGZ3ufxgwIHDhw4cODAgVsCly4Op8GqEN0HHRfk4MCBAwcOHDhwS+BOF5LVAro6QPc6aUAuB2pw4MCBAwcOHLjlcN0AOrUIrV7/9PPGC2lw4MCBAwcOHLgvw00H0G4RnC5IuwvTt3OCAwcOHDhw4MAthTsdpLu4rAbZbhAfK9DBgQMHDhw4cOCWwLUL2nBBmBbbt15sPA3I4MCBAwcOHDhwW+Cmb6QagNOFaDdoxw8eHDhw4MCBAwduGVw38KaFcPX87uDjARgcOHDgwIEDB24JXLqI7BbX3YK8exwHZHDgwIEDBw4cuB+Dmwq0t4J3+kDBgQMHDhw4cOD+F7gUqLpQnT7/eHEKDhw4cODAgQO3FO5Ti8Yp+OkXDeMADA4cOHDgwIED9yW4awXu4Y2eXu80uFeBj/8BAAcOHDhw4MCBWwLnKC44EYADBw6cAxy47x5/AVjlfrVBkAjRAAAAAElFTkSuQmCC">
+          </div>
+        </div>
+      
+    
+      
+        <a class="-mob-share-telegram" title="" rel="external nofollow noopener noreferrer noopener"
+          
+            target="_blank" href="https://t.me/share/url?url=https://blog.grtsinry43.com/2024/06/27/kubernetes-quick-start/&text=学习分享｜Kubernetes快速上手，快速了解及开始使用 - Grtsinry43’s Blog"
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/telegram.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/telegram.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
   
+
   
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2024/06/09/less-media-variable/'>
+          <p class='title'>问题解决｜使用Less变量和媒体查询实现深浅色模式适配<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>使用Less变量简化css写法，并不影响css变量和媒体查询在深浅模式切换时的效果
+
+
+分析问题首先要清楚问题的来源是什么，使用媒体查询api可以根据深浅色为css变量赋予不同的值，而Less（...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+      <meta itemprop="discussionUrl" content="/2024/06/27/kubernetes-quick-start/index.html#comments">
     </span>
-  
-  
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/06/09/less-media-variable/"  itemprop="url">
-        问题解决｜使用Less变量和媒体查询实现深浅色模式适配
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
+      <p cst>在这里留下你的评论吧～</p>
     
-      <p>使用Less变量简化css写法，并不影响css变量和媒体查询在深浅模式切换时的效果</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://dogeoss.grtsinry43.com/img/author.jpeg'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://dogeoss.grtsinry43.com/img/author.jpeg">
-            <meta itemprop="name" content="Grtsinry43">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-06-09T21:36:30+08:00">2024-06-09</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/">技术学习</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/" itemprop="url"><span itemprop="name">技术学习</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/06/09/less-media-variable/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
+    <div id="layoutHelper-comments"></div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.grtsinry43.com/2024/06/09/learn-simple-frontend/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Grtsinry43’s Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Grtsinry43’s Blog">
-    <meta itemprop="description" content="一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/06/09/learn-simple-frontend/"  itemprop="url">
-        学习分享｜原生三件套的网页效果
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>这是学习前端基础，用原生三件套尤其是js实现效果一些学习过程的记录，首先是静态的小米商城，之后实现了一些效果，比如表格、轮播图、瀑布流等，都是为了提升自己原生js的dom操作能力</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://dogeoss.grtsinry43.com/img/author.jpeg'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://dogeoss.grtsinry43.com/img/author.jpeg">
-            <meta itemprop="name" content="Grtsinry43">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-06-09T21:29:07+08:00">2024-06-09</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/">技术学习</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/" itemprop="url"><span itemprop="name">技术学习</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/06/09/learn-simple-frontend/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
+  </article>
 
-</div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.grtsinry43.com/2024/06/09/learn-share-1/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Grtsinry43’s Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Grtsinry43’s Blog">
-    <meta itemprop="description" content="一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/06/09/learn-share-1/"  itemprop="url">
-        学习分享｜跨域解决、安卓开发探索、油猴脚本探索
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>最近学习的一些内容，包括跨域问题及其解决方案，安卓开发的简单探索，OpenAI的api做了个小插件</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://dogeoss.grtsinry43.com/img/author.jpeg'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://dogeoss.grtsinry43.com/img/author.jpeg">
-            <meta itemprop="name" content="Grtsinry43">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-06-09T21:22:48+08:00">2024-06-09</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/">技术学习</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/" itemprop="url"><span itemprop="name">技术学习</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/06/09/learn-share-1/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.grtsinry43.com/2023/06/16/helloback/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Grtsinry43’s Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Grtsinry43’s Blog">
-    <meta itemprop="description" content="一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/06/16/helloback/"  itemprop="url">
-        高考之后回来啦
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>终于终于，忙碌而又充实的高三生活结束了，当然，这也意味着人生的一个新阶段开始啦<br>作为计算机技术的爱好者但也是小白，这次是一个新的起点，</p>
-<p>希望自己能抓住这段时间，不断进步和成长。生命不息，学习不止！</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://dogeoss.grtsinry43.com/img/author.jpeg'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://dogeoss.grtsinry43.com/img/author.jpeg">
-            <meta itemprop="name" content="Grtsinry43">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-06-16T23:21:49+08:00">2023-06-16</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/06/16/helloback/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.grtsinry43.com/2023/06/15/article-archive/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Grtsinry43’s Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Grtsinry43’s Blog">
-    <meta itemprop="description" content="一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/06/15/article-archive/"  itemprop="url">
-        高中时期一些文章的整理合集
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>这里归档了一些我高中时候写的作文，既是黑历史，也是一段之前的记忆吧</p>
-<p>大多数都是格式文章，千篇一律的套路啦</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://dogeoss.grtsinry43.com/img/author.jpeg'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://dogeoss.grtsinry43.com/img/author.jpeg">
-            <meta itemprop="name" content="Grtsinry43">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-06-15T14:21:19+08:00">2023-06-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%A6%99%E7%AC%94%E7%94%9F%E8%8A%B1/">妙笔生花</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%A6%99%E7%AC%94%E7%94%9F%E8%8A%B1/" itemprop="url"><span itemprop="name">妙笔生花</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/06/15/article-archive/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
 
 
 </div>
@@ -3324,62 +3312,25 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop pjax">
-  <div class='content'>
     
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://dogeoss.grtsinry43.com/img/author.jpeg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>Grtsinry43</h2>
-        
-        
-          <p>希望能一直做自己喜欢的事情！</p>
+  
 
-        
-        
-          <p><span id="jinrishici-sentence">Grtsinry43’s Blog</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
+  
     
     
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:grtsinry43@outlook.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/grtsinry43"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
+      
+
+<section class="widget desktop mobile pjax">
+  
+  <header>
     
+      <i class="fa-solid fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2024/06/27/kubernetes-quick-start/"><div class="item"><time>2024-06-27</time><span>技术学习</span></div><span>学习分享｜Kubernetes快速上手，快速了解及开始使用</span></a></li><li><a class="widget-last" href="/2024/06/09/learn-share-1/"><div class="item"><time>2024-06-09</time><span>技术学习</span></div><span>学习分享｜跨域解决、安卓开发探索、油猴脚本探索</span></a></li><li><a class="widget-last" href="/2024/06/09/less-media-variable/"><div class="item"><time>2024-06-09</time><span>技术学习</span></div><span>问题解决｜使用Less变量和媒体查询实现深浅色模式适配</span></a></li><li><a class="widget-last" href="/2024/06/09/learn-simple-frontend/"><div class="item"><time>2024-06-09</time><span>技术学习</span></div><span>学习分享｜原生三件套的网页效果</span></a></li><li><a class="widget-last" href="/2023/06/16/helloback/"><div class="item"><time>2024-06-09</time></div><span>高考之后回来啦</span></a></li></ul>
   </div>
 </section>
 
@@ -3390,30 +3341,30 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
 
+  <section class='widget desktop mobile pjax music'>
+    
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%A6%99%E7%AC%94%E7%94%9F%E8%8A%B1/" href="/categories/%E5%A6%99%E7%AC%94%E7%94%9F%E8%8A%B1/"
-            active-action="action-categoriesE5A699E7AC94E7949FE88AB1"
-            ><div class='name'>妙笔生花</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/" href="/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/"
-            active-action="action-categoriesE68A80E69CAFE5ADA6E4B9A0"
-            ><div class='name'>技术学习</div><div class='badge'>(4)</div></a></li>
-        
-      </ul>
+      
+
+  
+    <meting-js
+      theme='#1BCDFC'
+      autoplay='false'
+      volume='0.7'
+      loop='all'
+      order='list'
+      fixed='false'
+      list-max-height='320px'
+      server='netease'
+      type='playlist'
+      id='7620200216'
+      list-folded='true'>
+    </meting-js>
+  
+
+
     </div>
   </section>
 
@@ -3475,58 +3426,41 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   
 
+
+<div class="widget-sticky pjax">
+
   
-    
-    
-      
   
-  <section class="widget tagcloud desktop mobile pjax">
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
     
   <header>
     
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <a href="/tags/JavaScript/" style="font-size: 24px; color: #555">JavaScript</a> <a href="/tags/Vue-js/" style="font-size: 14px; color: #999">Vue.js</a> <a href="/tags/css/" style="font-size: 24px; color: #555">css</a> <a href="/tags/html/" style="font-size: 14px; color: #999">html</a> <a href="/tags/kubernetes/" style="font-size: 14px; color: #999">kubernetes</a> <a href="/tags/less/" style="font-size: 14px; color: #999">less</a> <a href="/tags/linux/" style="font-size: 14px; color: #999">linux</a> <a href="/tags/%E4%BD%9C%E6%96%87/" style="font-size: 14px; color: #999">作文</a> <a href="/tags/%E5%AE%89%E5%8D%93/" style="font-size: 14px; color: #999">安卓</a> <a href="/tags/%E6%95%B4%E7%90%86/" style="font-size: 14px; color: #999">整理</a> <a href="/tags/%E6%A2%A6%E6%83%B3/" style="font-size: 14px; color: #999">梦想</a> <a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 14px; color: #999">网络</a> <a href="/tags/%E8%BF%90%E7%BB%B4/" style="font-size: 14px; color: #999">运维</a> <a href="/tags/%E9%9D%92%E6%98%A5/" style="font-size: 14px; color: #999">青春</a> <a href="/tags/%E9%AB%98%E8%80%83/" style="font-size: 14px; color: #999">高考</a>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E8%A6%81%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.</span> <span class="toc-text">简要介绍</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Kubernetes-%E7%AE%80%E4%BB%8B"><span class="toc-number">1.1.</span> <span class="toc-text">Kubernetes 简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8E-docker-compose-%E7%9A%84%E6%AF%94%E8%BE%83"><span class="toc-number">1.2.</span> <span class="toc-text">与 docker-compose 的比较</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E4%B8%8E%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B"><span class="toc-number">2.</span> <span class="toc-text">安装与快速上手</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">2.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE"><span class="toc-number">2.2.</span> <span class="toc-text">系统配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9B%86%E7%BE%A4%E9%85%8D%E7%BD%AE"><span class="toc-number">2.3.</span> <span class="toc-text">集群配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">2.4.</span> <span class="toc-text">一些常用命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E9%99%85%E6%BC%94%E7%BB%83"><span class="toc-number">3.</span> <span class="toc-text">实际演练</span></a></li></ol>
     </div>
   </section>
 
-
-    
   
-
-  
-    
-    
-      
-
-<section class="widget desktop mobile pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2024/06/27/kubernetes-quick-start/"><div class="item"><time>2024-06-27</time><span>技术学习</span></div><span>学习分享｜Kubernetes快速上手，快速了解及开始使用</span></a></li><li><a class="widget-last" href="/2024/06/09/learn-share-1/"><div class="item"><time>2024-06-09</time><span>技术学习</span></div><span>学习分享｜跨域解决、安卓开发探索、油猴脚本探索</span></a></li><li><a class="widget-last" href="/2024/06/09/less-media-variable/"><div class="item"><time>2024-06-09</time><span>技术学习</span></div><span>问题解决｜使用Less变量和媒体查询实现深浅色模式适配</span></a></li><li><a class="widget-last" href="/2024/06/09/learn-simple-frontend/"><div class="item"><time>2024-06-09</time><span>技术学习</span></div><span>学习分享｜原生三件套的网页效果</span></a></li><li><a class="widget-last" href="/2023/06/16/helloback/"><div class="item"><time>2024-06-09</time></div><span>高考之后回来啦</span></a></li></ul>
-  </div>
-</section>
-
-    
-  
-
-
-<div class="widget-sticky pjax">
 
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3553,7 +3487,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3562,15 +3496,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="full";
-      cover_wrapper.style.display="";
-      scroll_down.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
+      scroll_down.style.display="none";
     
   
 </script>
@@ -4891,7 +4825,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Grtsinry43’s Blog","url":"https://blog.grtsinry43.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Grtsinry43","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.grtsinry43.com/","sameAs":["https://github.com/volantis-x"],"description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.grtsinry43.com/","name":"Grtsinry43’s Blog"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Grtsinry43’s Blog","url":"https://blog.grtsinry43.com/","keywords":"写作,开发,生活,青春,梦想","description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待","author":{"@type":"Person","name":"Grtsinry43","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.grtsinry43.com/","description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待"},"publisher":{"@type":"Organization","name":"Grtsinry43’s Blog","url":"https://blog.grtsinry43.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.grtsinry43.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Grtsinry43","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.grtsinry43.com/"},"publisher":{"@type":"Organization","name":"Grtsinry43’s Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Grtsinry43’s Blog","url":"https://blog.grtsinry43.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Grtsinry43","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.grtsinry43.com/","sameAs":["https://github.com/volantis-x"],"description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.grtsinry43.com/","name":"Grtsinry43’s Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.grtsinry43.com/categories/技术学习/","name":"技术学习"}},{"@type":"ListItem","position":3,"item":{"@id":"https://blog.grtsinry43.com/2024/06/27/kubernetes-quick-start/","name":"学习分享｜Kubernetes快速上手，快速了解及开始使用"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Grtsinry43’s Blog","url":"https://blog.grtsinry43.com/","keywords":"写作,开发,生活,青春,梦想","description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待","author":{"@type":"Person","name":"Grtsinry43","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.grtsinry43.com/","description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待"},"publisher":{"@type":"Organization","name":"Grtsinry43’s Blog","url":"https://blog.grtsinry43.com/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.grtsinry43.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"学习分享｜Kubernetes快速上手，快速了解及开始使用","description":"最近感觉 K8s 挺火的，也许是时下比较热门的技术栈了，学习过程比较曲折复杂，分享一下自己的学习过程，从快速入门，到一些深入的使用","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.grtsinry43.com/2024/06/27/kubernetes-quick-start/"},"author":{"@type":"Person","name":"Grtsinry43","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.grtsinry43.com/"},"publisher":{"@type":"Organization","name":"Grtsinry43’s Blog","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://blog.grtsinry43.com/2024/06/27/kubernetes-quick-start/","wordCount":65,"datePublished":"2024-06-27T11:09:46.000Z","dateModified":"2024-06-27T14:08:15.096Z","articleSection":"技术学习","keywords":"kubernetes,linux,运维","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
