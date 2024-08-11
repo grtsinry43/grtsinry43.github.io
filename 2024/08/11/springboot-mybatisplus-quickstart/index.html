@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://blog.grtsinry43.com/archives/2023/06/"/>
+  
+  <link rel="canonical" href="https://blog.grtsinry43.com/2024/08/11/springboot-mybatisplus-quickstart/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -35,19 +35,23 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="Grtsinry43’s Blog" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>归档：2023/6 - Grtsinry43’s Blog</title>
-  <meta name="keywords" content="写作,开发,生活,青春,梦想">
+  <title>学习分享｜使用 Spring Boot + MyBatisPlus 提高效率，简化开发 - Grtsinry43’s Blog</title>
+  <meta name="keywords" content="后端,Java,Spring Boot,写作,开发,生活,青春,梦想">
   <meta desc name="description" content="一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待 - Grtsinry43 - Grtsinry43’s Blog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="Grtsinry43’s Blog">
-<meta property="og:url" content="https://blog.grtsinry43.com/archives/2023/06/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学习分享｜使用 Spring Boot + MyBatisPlus 提高效率，简化开发">
+<meta property="og:url" content="https://blog.grtsinry43.com/2024/08/11/springboot-mybatisplus-quickstart/index.html">
 <meta property="og:site_name" content="Grtsinry43’s Blog">
-<meta property="og:description" content="一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待">
+<meta property="og:description" content="最近一段时间，由于一些项目的需求，于是被迫用很快的速度学完了 Spring Framework，SpringMVC，Spring Boot。 然而实际上，我认为学习后端框架原理，前端的脚手架开发，搞一些基础建设是远远比每天写单调简单的业务逻辑要收获更多的，就是更多还是要有解决问题的能力和创新进步的想法吧，所以写业务逻辑当然是越省时间越好，机械操作和基础代码就越快搞定越好，这引出了我们为什么要使用">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2024-08-10T16:05:33.000Z">
+<meta property="article:modified_time" content="2024-08-11T04:17:54.367Z">
 <meta property="article:author" content="Grtsinry43">
-<meta property="article:tag" content="写作,开发,生活,青春,梦想">
+<meta property="article:tag" content="后端">
+<meta property="article:tag" content="Java">
+<meta property="article:tag" content="Spring Boot">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2326,7 +2330,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- Custom Files bodyBegin end-->
     <!-- front-matter body_begin begin -->
     <!-- front-matter body_begin end -->
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2797,7 +2801,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  dock' style="display: ;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2867,24 +2871,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-	
-		
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.grtsinry43.com/2023/06/16/helloback/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://blog.grtsinry43.com/2024/08/11/springboot-mybatisplus-quickstart/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Grtsinry43’s Blog">
   </span>
@@ -2893,134 +2881,349 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/06/16/helloback/"  itemprop="url">
-        高考之后回来啦
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      <p>终于终于，忙碌而又充实的高三生活结束了，当然，这也意味着人生的一个新阶段开始啦<br>作为计算机技术的爱好者但也是小白，这次是一个新的起点，</p>
-<p>希望自己能抓住这段时间，不断进步和成长。生命不息，学习不止！</p>
     
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+      <h1 class="title" itemprop="name headline">
+        学习分享｜使用 Spring Boot + MyBatisPlus 提高效率，简化开发
+      </h1>
+      <div class='new-meta-box'>
         
           
-          <a class='avatar' href='/'><img src='https://dogeoss.grtsinry43.com/img/author.jpeg'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://dogeoss.grtsinry43.com/img/author.jpeg">
-            <meta itemprop="name" content="Grtsinry43">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-06-16T23:21:49+08:00">2023-06-16</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/06/16/helloback/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://dogeoss.grtsinry43.com/img/author.jpeg" class="lazyload" data-srcset="https://dogeoss.grtsinry43.com/img/author.jpeg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">Grtsinry43</p>
+  </a>
 </div>
 
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-08-11T00:05:33+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2024年8月11日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span data-path="/2024/08/11/springboot-mybatisplus-quickstart/" class="waline-pageview-count">
+        <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
+      </span>
+      
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
+        
+          
+            
+<div class="new-meta-item comments-count">
+   
+  
+  <a href="/2024/08/11/springboot-mybatisplus-quickstart/#comments">
+    <i class="fa-solid fa-comment-dots fa-fw"></i>
+    <p>
+      <span data-path="/2024/08/11/springboot-mybatisplus-quickstart/" class="waline-comment-count">
+        <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
+      </span> 
+       
+        <span class="leancloud-comments-count">&nbsp;条评论</span> 
+       
+    </p>
+  </a>
+</div>
+
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：1.3k 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：6 分钟</p>
+    </a>
+  </div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <p>最近一段时间，由于一些项目的需求，于是被迫用很快的速度学完了 Spring Framework，SpringMVC，Spring Boot。</p>
+<p>然而实际上，我认为学习后端框架原理，前端的脚手架开发，搞一些基础建设是远远比每天写单调简单的业务逻辑要收获更多的，就是更多还是要有解决问题的能力和创新进步的想法吧，所以写业务逻辑当然是越省时间越好，机械操作和基础代码就越快搞定越好，这引出了我们为什么要使用 <code>MyBatis-Plus</code></p>
+<p>首先是它的官网快速上手部分：<a target="_blank" rel="noopener" href="https://baomidou.com/getting-started/">点我跳转</a></p>
+<h2 id="基础使用（利用提供的类进行增删改查）"><a href="#基础使用（利用提供的类进行增删改查）" class="headerlink" title="基础使用（利用提供的类进行增删改查）"></a>基础使用（利用提供的类进行增删改查）</h2><p>首先在 maven 的依赖中添加 （最新版在 <a target="_blank" rel="noopener" href="https://mvnrepository.com/artifact/com.baomidou/mybatis-plus/3.4.1">Maven Repository</a> 查找）</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.baomidou<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mybatis-plus-spring-boot3-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.5.7<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>同步依赖后配置注解扫描 mapper</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.grtsinry43.projectpackage;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> org.mybatis.spring.annotation.MapperScan;</span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.SpringApplication;</span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.autoconfigure.SpringBootApplication;</span><br><span class="line"></span><br><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="meta">@MapperScan(&quot;com.grtsinry43.projectpackage.mapper&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">SimpleBackendApplication</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        SpringApplication.run(SimpleBackendApplication.class, args);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>下面我们先创建实体类（model）</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.grtsinry43.projectpackage.model;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.baomidou.mybatisplus.annotation.IdType;</span><br><span class="line"><span class="keyword">import</span> com.baomidou.mybatisplus.annotation.TableId;</span><br><span class="line"><span class="keyword">import</span> com.baomidou.mybatisplus.annotation.TableName;</span><br><span class="line"><span class="keyword">import</span> lombok.Data;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.sql.Timestamp;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> grtsinry43</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span> 2024/8/11 11:08</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@description</span> user 的实体类</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="meta">@TableName(&quot;user&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">User</span> &#123;</span><br><span class="line">    <span class="meta">@TableId(type = IdType.AUTO)</span></span><br><span class="line">    <span class="keyword">private</span> Integer id;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> Boolean gender;</span><br><span class="line">    <span class="keyword">private</span> Integer age;</span><br><span class="line">    <span class="keyword">private</span> String phone;</span><br><span class="line">    <span class="keyword">private</span> String password;</span><br><span class="line">    <span class="keyword">private</span> Timestamp createAt;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>这里使用了 Lombok 的 <code>@Data</code> 注解来自动生成 <code>Getter</code>、<code>Setter</code> 方法、<code>toString</code> 方法、<code>hashCode</code> 方法、<code>equals</code> 方法。</p>
+</blockquote>
+<p>下面我们来写对应的 Mapper，在这里，MyBatis-Plus 提供了一个 BaseMapper，我们只需要继承这个接口就可以直接获得增删改查的功能</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.grtsinry43.projectpackage.mapper;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.baomidou.mybatisplus.core.mapper.BaseMapper;</span><br><span class="line"><span class="keyword">import</span> com.grtsinry43.projectpackage.model.User;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> grtsinry43</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span> 2024/8/11 11:13</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@description</span> 用户的 Mapper 接口</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">UserMapper</span> <span class="keyword">extends</span> <span class="title class_">BaseMapper</span>&lt;User&gt; &#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>当然，如果需要一些自定义的 sql 语句，也可以自行配置，这里采用最简单的来举例</p>
+<p>在 resources/mapper 新建 <code>UserMapper.xml</code></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span> ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span></span></span><br><span class="line"><span class="meta">        <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span></span></span><br><span class="line"><span class="meta">        <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;com.grtsinry43.projectpackage.mapper.UserMapper&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectUsersOlderThan&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.grtsinry43.projectpackage.model.User&quot;</span>&gt;</span></span><br><span class="line">        SELECT * FROM user WHERE age &gt; #&#123;age&#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">UserMapper</span> <span class="keyword">extends</span> <span class="title class_">BaseMapper</span>&lt;User&gt; &#123;</span><br><span class="line">    <span class="meta">@Select(&quot;select * from user where age &gt; #&#123;age&#125;&quot;)</span></span><br><span class="line">    List&lt;User&gt; <span class="title function_">selectUsersOlderThan</span><span class="params">(Integer age)</span>;</span><br><span class="line">&#125;代码生成器</span><br></pre></td></tr></table></figure>
+
+<p>然后在 Service 中，传入 Mapper 和对应的数据模型，继承 ServiceImpl</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.grtsinry43.projectpackage.service;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;</span><br><span class="line"><span class="keyword">import</span> com.grtsinry43.projectpackage.mapper.UserMapper;</span><br><span class="line"><span class="keyword">import</span> com.grtsinry43.projectpackage.model.User;</span><br><span class="line"><span class="keyword">import</span> org.springframework.stereotype.Service;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Service</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">UserService</span> <span class="keyword">extends</span> <span class="title class_">ServiceImpl</span>&lt;UserMapper, User&gt; &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> UserMapper userMapper;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">UserService</span><span class="params">(UserMapper userMapper)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.userMapper = userMapper;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这样，我们的 Service 对象就有了 crud 方法，我们可以在 Controller 类中直接使用~</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.grtsinry43.projectpackage.controller;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.grtsinry43.projectpackage.dto.ApiResponse;</span><br><span class="line"><span class="keyword">import</span> com.grtsinry43.projectpackage.model.User;</span><br><span class="line"><span class="keyword">import</span> com.grtsinry43.projectpackage.service.UserService;</span><br><span class="line"><span class="keyword">import</span> jakarta.validation.constraints.NotBlank;</span><br><span class="line"><span class="keyword">import</span> jakarta.validation.constraints.NotNull;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.bind.annotation.*;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> grtsinry43</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span> 2024/8/11 11:30</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@description</span> 少年负壮气，奋烈自有时！</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="meta">@RequestMapping(&quot;/api/user&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">UserController</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> UserService userService;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">UserController</span><span class="params">(UserService userService)</span> &#123;</span><br><span class="line">        <span class="built_in">this</span>.userService = userService;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping(&quot;/&#123;id&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> ApiResponse&lt;User&gt; <span class="title function_">getUserInfo</span><span class="params">(<span class="meta">@PathVariable</span> Integer id)</span> &#123;</span><br><span class="line">        <span class="type">User</span> <span class="variable">user</span> <span class="operator">=</span> userService.getById(id);</span><br><span class="line">        <span class="keyword">return</span> ApiResponse.success(user);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@PutMapping(&quot;/&#123;id&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> ApiResponse&lt;User&gt; <span class="title function_">updateUserInfo</span><span class="params">(<span class="meta">@PathVariable</span> Integer id, <span class="meta">@RequestBody</span> User user)</span> &#123;</span><br><span class="line">        user.setId(id);</span><br><span class="line">        userService.updateById(user);</span><br><span class="line">        <span class="keyword">return</span> ApiResponse.success(user);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@DeleteMapping(&quot;/&#123;id&#125;&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> ApiResponse&lt;Object&gt; <span class="title function_">deleteUser</span><span class="params">(<span class="meta">@PathVariable</span> Integer id)</span> &#123;</span><br><span class="line">        userService.removeById(id);</span><br><span class="line">        <span class="keyword">return</span> ApiResponse.success(<span class="literal">null</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="使用代码生成器（完全不用敲代码）"><a href="#使用代码生成器（完全不用敲代码）" class="headerlink" title="使用代码生成器（完全不用敲代码）"></a>使用代码生成器（完全不用敲代码）</h2><blockquote>
+<p>当然，手动敲代码真的是太繁琐了，我真的非常讨厌在简单业务逻辑尤其是基本的 crud 上浪费时间，MyBatis-Plus 也想到了这一点，人家的完整使用方法可不是上面的那<del>么</del>复杂，借助代码生成器（Auto Generator）完全无脑搞起来吧！</p>
+</blockquote>
+<blockquote>
+<p>注意！根据官方文档，新的代码生成器适用于 3.5.1 及以上版本</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.grtsinry43.mybatisplusquickstart.util;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.baomidou.mybatisplus.annotation.FieldFill;</span><br><span class="line"><span class="keyword">import</span> com.baomidou.mybatisplus.generator.FastAutoGenerator;</span><br><span class="line"><span class="keyword">import</span> com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;</span><br><span class="line"><span class="keyword">import</span> com.baomidou.mybatisplus.generator.fill.Column;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.Arrays;</span><br><span class="line"><span class="keyword">import</span> java.util.Collections;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Code generator for MyBatis Plus.</span></span><br><span class="line"><span class="comment"> * Author: grtsinry43</span></span><br><span class="line"><span class="comment"> * Date: 2024/8/11</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">CodeGenerator</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        FastAutoGenerator.create(<span class="string">&quot;url&quot;</span>,</span><br><span class="line">                        <span class="string">&quot;username&quot;</span>, <span class="string">&quot;password&quot;</span>)</span><br><span class="line">                <span class="comment">// 全局配置</span></span><br><span class="line">                .globalConfig((scanner, builder) -&gt; builder</span><br><span class="line">                        .author(scanner.apply(<span class="string">&quot;请输入作者名称？&quot;</span>))</span><br><span class="line">                        .outputDir(<span class="string">&quot;src/main/java&quot;</span>) <span class="comment">// Specify the output directory</span></span><br><span class="line">                )</span><br><span class="line">                <span class="comment">// 包配置</span></span><br><span class="line">                .packageConfig((scanner, builder) -&gt; builder.parent(scanner.apply(<span class="string">&quot;请输入包名？&quot;</span>)))</span><br><span class="line">                <span class="comment">// 策略配置</span></span><br><span class="line">                .strategyConfig((scanner, builder) -&gt; builder.addInclude(getTables(scanner.apply(<span class="string">&quot;请输入表名，多个英文逗号分隔？所有输入 all&quot;</span>)))</span><br><span class="line">                        .entityBuilder()</span><br><span class="line">                        .enableLombok()</span><br><span class="line">                        .addTableFills(</span><br><span class="line">                                <span class="keyword">new</span> <span class="title class_">Column</span>(<span class="string">&quot;create_time&quot;</span>, FieldFill.INSERT)</span><br><span class="line">                        )</span><br><span class="line">                        .build())</span><br><span class="line">                <span class="comment">// 使用Freemarker引擎模板，默认的是Velocity引擎模板</span></span><br><span class="line">                .templateEngine(<span class="keyword">new</span> <span class="title class_">FreemarkerTemplateEngine</span>())</span><br><span class="line">                .execute();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 处理 all 情况</span></span><br><span class="line">    <span class="keyword">protected</span> <span class="keyword">static</span> List&lt;String&gt; <span class="title function_">getTables</span><span class="params">(String tables)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;all&quot;</span>.equals(tables) ? Collections.emptyList() : Arrays.asList(tables.split(<span class="string">&quot;,&quot;</span>));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这样，就会按照结构生成好啦：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">❯ tree .</span><br><span class="line">.</span><br><span class="line">└── mybatisplusquickstart</span><br><span class="line">    ├── controller</span><br><span class="line">    │   └── UserController.java</span><br><span class="line">    ├── entity</span><br><span class="line">    │   └── User.java</span><br><span class="line">    ├── mapper</span><br><span class="line">    │   ├── UserMapper.java</span><br><span class="line">    │   └── xml</span><br><span class="line">    │       └── UserMapper.xml</span><br><span class="line">    ├── MybatisplusQuickstartApplication.java</span><br><span class="line">    ├── service</span><br><span class="line">    │   ├── impl</span><br><span class="line">    │   │   └── UserServiceImpl.java</span><br><span class="line">    │   └── IUserService.java</span><br><span class="line">    └── util</span><br><span class="line">        └── CodeGenerator.java</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>以上，就可以在不用敲代码的情况下实现基本的数据操作，大大提高效率，减少机械操作了</p>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+        
+  <div class="related_posts">
+    <section class='header'>
+      <i class="fa-solid fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
+    </section>
+    <section class='body'>
+      <div class="vlts-rps"><a class="item" href="/2024/06/27/kubernetes-quick-start/" title="学习分享｜Kubernetes快速上手，快速了解及开始使用" rel="bookmark "><span class="title">学习分享｜Kubernetes快速上手，快速了解及开始使用</span><span class="excerpt">最近感觉 K8s 挺火的，也许是时下比较热门的技术栈了，学习过程比较曲折复杂，分享一下自己的学习过程，从快速入门，到一些深...</span></a></div></section></div>
+      
+      <!-- 版权声明组件 -->
+      
+        
+          
+          <div class="copyright license">
+            <div class="license-title">学习分享｜使用 Spring Boot + MyBatisPlus 提高效率，简化开发</div>
+            <div class="license-link"><a href="https://blog.grtsinry43.com/2024/08/11/springboot-mybatisplus-quickstart/">https://blog.grtsinry43.com/2024/08/11/springboot-mybatisplus-quickstart/</a>
+            </div>
+            <div class="license-meta">
+              <div class="license-meta-item">
+                <div class="license-meta-title">本文作者</div>
+                <div class="license-meta-text">Grtsinry43</div>
+              </div>
+              <div class="license-meta-item">
+                <div class="license-meta-title">发布于</div>
+                <div class="license-meta-text">2024年8月11日</div>
+              </div>
+              
+              
+              <div class="license-meta-item">
+                <div class="license-meta-title">许可协议</div>
+                <div class="license-meta-text"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh#" target="_blank">CC BY-NC-SA 4.0</a></div>
+              </div>
+            </div>
+            <div class="license-statement">署名-非商业性使用-相同方式共享 4.0 国际。</div>
           </div>
         
       
+      <!-- 打赏组件 -->
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.grtsinry43.com/2023/06/15/article-archive/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Grtsinry43’s Blog">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Grtsinry43’s Blog">
-    <meta itemprop="description" content="一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待">
-  </span>
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-08-11T12:17:54+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2024年8月11日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%90%8E%E7%AB%AF/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>后端</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Java/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Java</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Spring-Boot/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Spring Boot</p></a></div>
+  <span hidden itemprop="keywords">后端 Java Spring Boot</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.grtsinry43.com/2024/08/11/springboot-mybatisplus-quickstart/&title=学习分享｜使用 Spring Boot + MyBatisPlus 提高效率，简化开发 - Grtsinry43’s Blog&summary="
+          
+          >
+          
+            <img src="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://blog.grtsinry43.com/2024/08/11/springboot-mybatisplus-quickstart/&title=学习分享｜使用 Spring Boot + MyBatisPlus 提高效率，简化开发 - Grtsinry43’s Blog&summary="
+          
+          >
+          
+            <img src="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://blog.grtsinry43.com/2024/08/11/springboot-mybatisplus-quickstart/&title=学习分享｜使用 Spring Boot + MyBatisPlus 提高效率，简化开发 - Grtsinry43’s Blog&summary="
+          
+          >
+          
+            <img src="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        
+        <div class='hoverbox'>
+          <a class='share'><img src="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/wechat.png" class="lazyload" data-srcset="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
+          <div class='target'>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATgAAAE4CAAAAADqFLC2AAADqklEQVR42u3aQXLjMAwEQP//08l9UyoTAyiGss1bVLZFNHNAYfj6sqL1QgAOHDhwFjhwS+Be4frxg/88v/rc240193G6r/Q94MCBAwcOHDhw2+CqhVULr34/blCLB1yGBwcOHDhw4MCBWwpXLfzd99MGtdqwngK16wUHDhw4cODAgftjcNODy9sGkeDAgQMHDhw4cOBag83qQDM9QHDgwIEDBw4cuP8Frjt47IKlAfjjknxw4MCBAwcOHLghuOnB4Pa/43rBgQMHDhw4cOCWwHVXd6PpADQNwNv1ggMHDhw4cODALYFLG8TuIDINuqca9vhAwYEDBw4cOHDglsC9C3K7z9OGuPq8GlBXg25w4MCBAwcOHLinwaUX86obbRc0DH8cSIMDBw4cOHDgwH0ILv2BdDB4+8W/4gFVDwocOHDgwIEDB+4pcN0guQtVbXTvDqjBgQMHDhw4cOC2wHUb324Q3G2cpwafxxclwYEDBw4cOHDglsB1C5wKiquD1amDrwbX4MCBAwcOHDhwT4HrFlq9aFhtpKcC7vEGGBw4cODAgQMH7pfhpgPn4wt74WByKpA+btDBgQMHDhw4cOCWwaWNatpgpsF0NwBv1w0OHDhw4MCBA7cMbnqDaSObBsxp4Fy+4AgOHDhw4MCBA7cErjpwTC8CdgPhsUFk8f3gwIEDBw4cOHBPgTt9YToYTAPlbqBdff/bi4XgwIEDBw4cOHDL4KoN8BR4dTCaNrDtz4EDBw4cOHDgwC2FS4PccrDbHChW4bv7AwcOHDhw4MCBewrcV3GlgOnAsbqPscYcHDhw4MCBAwduCVy6kWpDW22su/uZGpheDjLBgQMHDhw4cOCWwbUHfYeFVN/fHVxOBfDgwIEDBw4cOHBb4dJBZLXx7Qbe3SA9DuTBgQMHDhw4cOCWwp02klNB79TBTUNe7gscOHDgwIEDB245XLfRnALqQqXr0gccOHDgwIEDB24JXHdVC00D5imIasN+2QCDAwcOHDhw4MB9GG56I2mDml4ErA5c0wMCBw4cOHDgwIHbCvfbG+sG4mnh4w0wOHDgwIEDBw7cErhyQBt+/hTmtNDbAug0yQcHDhw4cODAgXsIXNxQDje2t/8jgAMHDhw4cODA/VG40+fdRnjqe6fBOThw4MCBAwcO3Ha46Q12Lyp2odODLw8ywYEDBw4cOHDgPgTXDXBPG+bqALQbVFd/v9wAgwMHDhw4cODAfQjOKg46EYADBw6cBQ7cZ9c3EsqAlxO0Z0QAAAAASUVORK5CYII=">
+          </div>
+        </div>
+      
+    
+      
+        <a class="-mob-share-telegram" title="" rel="external nofollow noopener noreferrer noopener"
+          
+            target="_blank" href="https://t.me/share/url?url=https://blog.grtsinry43.com/2024/08/11/springboot-mybatisplus-quickstart/&text=学习分享｜使用 Spring Boot + MyBatisPlus 提高效率，简化开发 - Grtsinry43’s Blog"
+          
+          >
+          
+            <img src="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/telegram.png" class="lazyload" data-srcset="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/telegram.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
   
+
   
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2024/07/11/202406-frontend-summary/'>
+          <p class='title'>六月初至七月中旬｜前端学习简要总结，生活的小回顾<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>在这段时间里我通过完成多个项目，深入学习了前端和全栈开发的技术。主要使用了 Vue3、C++ Web 框架、jwt 鉴权、Docker、Nginx、FastAPI、微信网页开发、Vue2、Van...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="image" content="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+      <meta itemprop="discussionUrl" content="/2024/08/11/springboot-mybatisplus-quickstart/index.html#comments">
     </span>
-  
-  
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2023/06/15/article-archive/"  itemprop="url">
-        高中时期一些文章的整理合集
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
+      <p cst>在这里留下你的评论吧～</p>
     
-      <p>这里归档了一些我高中时候写的作文，既是黑历史，也是一段之前的记忆吧</p>
-<p>大多数都是格式文章，千篇一律的套路啦</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-          
-          <a class='avatar' href='/'><img src='https://dogeoss.grtsinry43.com/img/author.jpeg'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://dogeoss.grtsinry43.com/img/author.jpeg">
-            <meta itemprop="name" content="Grtsinry43">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2023-06-15T14:21:19+08:00">2023-06-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E5%A6%99%E7%AC%94%E7%94%9F%E8%8A%B1/">妙笔生花</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E5%A6%99%E7%AC%94%E7%94%9F%E8%8A%B1/" itemprop="url"><span itemprop="name">妙笔生花</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2023/06/15/article-archive/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
+    <div id="layoutHelper-comments"></div>
 
-          </div>
-        
-      
-    
-  </section>
-  
-    
-  
+  </article>
 
 
-	
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -3029,62 +3232,25 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop pjax">
-  <div class='content'>
     
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://dogeoss.grtsinry43.com/img/author.jpeg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>Grtsinry43</h2>
-        
-        
-          <p>希望能一直做自己喜欢的事情！</p>
+  
 
-        
-        
-          <p><span id="jinrishici-sentence">Grtsinry43’s Blog</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
+  
     
     
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:grtsinry43@outlook.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/grtsinry43"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
+      
+
+<section class="widget desktop mobile pjax">
+  
+  <header>
     
+      <i class="fa-solid fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2024/08/11/springboot-mybatisplus-quickstart/"><div class="item"><time>2024-08-11</time><span>技术学习</span></div><span>学习分享｜使用 Spring Boot + MyBatisPlus 提高效率，简化开发</span></a></li><li><a class="widget-last" href="/2024/07/11/202406-frontend-summary/"><div class="item"><time>2024-08-11</time><span>生活记录</span></div><span>六月初至七月中旬｜前端学习简要总结，生活的小回顾</span></a></li><li><a class="widget-last" href="/2024/06/09/learn-share-1/"><div class="item"><time>2024-08-11</time><span>技术学习</span></div><span>学习分享｜跨域解决、安卓开发探索、油猴脚本探索</span></a></li><li><a class="widget-last" href="/2024/07/03/wx-js-sdk-usage-vue3/"><div class="item"><time>2024-08-11</time><span>技术学习</span></div><span>学习分享｜Vue3项目中使用微信SDK开发微信网页</span></a></li><li><a class="widget-last" href="/2024/06/09/less-media-variable/"><div class="item"><time>2024-08-11</time><span>技术学习</span></div><span>问题解决｜使用Less变量和媒体查询实现深浅色模式适配</span></a></li></ul>
   </div>
 </section>
 
@@ -3095,35 +3261,30 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
 
+  <section class='widget desktop mobile pjax music'>
+    
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%A6%99%E7%AC%94%E7%94%9F%E8%8A%B1/" href="/categories/%E5%A6%99%E7%AC%94%E7%94%9F%E8%8A%B1/"
-            active-action="action-categoriesE5A699E7AC94E7949FE88AB1"
-            ><div class='name'>妙笔生花</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/" href="/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/"
-            active-action="action-categoriesE68A80E69CAFE5ADA6E4B9A0"
-            ><div class='name'>技术学习</div><div class='badge'>(6)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/" href="/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"
-            active-action="action-categoriesE7949FE6B4BBE8AEB0E5BD95"
-            ><div class='name'>生活记录</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
+      
+
+  
+    <meting-js
+      theme='#1BCDFC'
+      autoplay='false'
+      volume='0.7'
+      loop='all'
+      order='list'
+      fixed='false'
+      list-max-height='320px'
+      server='netease'
+      type='playlist'
+      id='7620200216'
+      list-folded='true'>
+    </meting-js>
+  
+
+
     </div>
   </section>
 
@@ -3185,58 +3346,41 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   
 
+
+<div class="widget-sticky pjax">
+
   
-    
-    
-      
   
-  <section class="widget tagcloud desktop mobile pjax">
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
     
   <header>
     
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <a href="/tags/Java/" style="font-size: 14px; color: #999">Java</a> <a href="/tags/JavaScript/" style="font-size: 24px; color: #555">JavaScript</a> <a href="/tags/Spring-Boot/" style="font-size: 14px; color: #999">Spring Boot</a> <a href="/tags/Vue-js/" style="font-size: 19px; color: #777">Vue.js</a> <a href="/tags/css/" style="font-size: 19px; color: #777">css</a> <a href="/tags/html/" style="font-size: 14px; color: #999">html</a> <a href="/tags/kubernetes/" style="font-size: 14px; color: #999">kubernetes</a> <a href="/tags/less/" style="font-size: 14px; color: #999">less</a> <a href="/tags/linux/" style="font-size: 14px; color: #999">linux</a> <a href="/tags/%E4%BD%9C%E6%96%87/" style="font-size: 14px; color: #999">作文</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 14px; color: #999">前端</a> <a href="/tags/%E5%90%8E%E7%AB%AF/" style="font-size: 14px; color: #999">后端</a> <a href="/tags/%E5%AE%89%E5%8D%93/" style="font-size: 14px; color: #999">安卓</a> <a href="/tags/%E5%BE%AE%E4%BF%A1/" style="font-size: 14px; color: #999">微信</a> <a href="/tags/%E6%80%BB%E7%BB%93/" style="font-size: 14px; color: #999">总结</a> <a href="/tags/%E6%95%B4%E7%90%86/" style="font-size: 14px; color: #999">整理</a> <a href="/tags/%E6%97%A5%E5%B8%B8/" style="font-size: 14px; color: #999">日常</a> <a href="/tags/%E6%A2%A6%E6%83%B3/" style="font-size: 14px; color: #999">梦想</a> <a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 14px; color: #999">生活</a> <a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 14px; color: #999">网络</a> <a href="/tags/%E8%BF%90%E7%BB%B4/" style="font-size: 14px; color: #999">运维</a> <a href="/tags/%E9%9D%92%E6%98%A5/" style="font-size: 14px; color: #999">青春</a> <a href="/tags/%E9%AB%98%E8%80%83/" style="font-size: 14px; color: #999">高考</a>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8%EF%BC%88%E5%88%A9%E7%94%A8%E6%8F%90%E4%BE%9B%E7%9A%84%E7%B1%BB%E8%BF%9B%E8%A1%8C%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">基础使用（利用提供的类进行增删改查）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E4%BB%A3%E7%A0%81%E7%94%9F%E6%88%90%E5%99%A8%EF%BC%88%E5%AE%8C%E5%85%A8%E4%B8%8D%E7%94%A8%E6%95%B2%E4%BB%A3%E7%A0%81%EF%BC%89"><span class="toc-number">2.</span> <span class="toc-text">使用代码生成器（完全不用敲代码）</span></a></li></ol>
     </div>
   </section>
 
-
-    
   
-
-  
-    
-    
-      
-
-<section class="widget desktop mobile pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2024/08/11/springboot-mybatisplus-quickstart/"><div class="item"><time>2024-08-11</time><span>技术学习</span></div><span>学习分享｜使用 Spring Boot + MyBatisPlus 提高效率，简化开发</span></a></li><li><a class="widget-last" href="/2024/07/11/202406-frontend-summary/"><div class="item"><time>2024-08-11</time><span>生活记录</span></div><span>六月初至七月中旬｜前端学习简要总结，生活的小回顾</span></a></li><li><a class="widget-last" href="/2024/06/09/learn-share-1/"><div class="item"><time>2024-08-11</time><span>技术学习</span></div><span>学习分享｜跨域解决、安卓开发探索、油猴脚本探索</span></a></li><li><a class="widget-last" href="/2024/07/03/wx-js-sdk-usage-vue3/"><div class="item"><time>2024-08-11</time><span>技术学习</span></div><span>学习分享｜Vue3项目中使用微信SDK开发微信网页</span></a></li><li><a class="widget-last" href="/2024/06/09/less-media-variable/"><div class="item"><time>2024-08-11</time><span>技术学习</span></div><span>问题解决｜使用Less变量和媒体查询实现深浅色模式适配</span></a></li></ul>
-  </div>
-</section>
-
-    
-  
-
-
-<div class="widget-sticky pjax">
 
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3256,13 +3400,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3271,14 +3416,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="half";
-      cover_wrapper.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
       scroll_down.style.display="none";
     
   
@@ -4600,7 +4745,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Grtsinry43’s Blog","url":"https://blog.grtsinry43.com/","logo":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Grtsinry43","image":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.grtsinry43.com/","sameAs":["https://github.com/volantis-x"],"description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.grtsinry43.com/","name":"Grtsinry43’s Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.grtsinry43.com/archives/","name":"Archive"}},{"@type":"ListItem","position":3,"item":{"@id":"https://blog.grtsinry43.com/archives/2023/","name":"2023年"}},{"@type":"ListItem","position":4,"item":{"@id":"https://blog.grtsinry43.com/archives/2023/6/","name":"6月"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Grtsinry43’s Blog","url":"https://blog.grtsinry43.com/","keywords":"写作,开发,生活,青春,梦想","description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待","author":{"@type":"Person","name":"Grtsinry43","image":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.grtsinry43.com/","description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待"},"publisher":{"@type":"Organization","name":"Grtsinry43’s Blog","url":"https://blog.grtsinry43.com/","logo":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.grtsinry43.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Grtsinry43","image":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.grtsinry43.com/"},"publisher":{"@type":"Organization","name":"Grtsinry43’s Blog","logo":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Grtsinry43’s Blog","url":"https://blog.grtsinry43.com/","logo":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Grtsinry43","image":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.grtsinry43.com/","sameAs":["https://github.com/volantis-x"],"description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.grtsinry43.com/","name":"Grtsinry43’s Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.grtsinry43.com/categories/技术学习/","name":"技术学习"}},{"@type":"ListItem","position":3,"item":{"@id":"https://blog.grtsinry43.com/2024/08/11/springboot-mybatisplus-quickstart/","name":"学习分享｜使用 Spring Boot + MyBatisPlus 提高效率，简化开发"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Grtsinry43’s Blog","url":"https://blog.grtsinry43.com/","keywords":"写作,开发,生活,青春,梦想","description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待","author":{"@type":"Person","name":"Grtsinry43","image":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.grtsinry43.com/","description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待"},"publisher":{"@type":"Organization","name":"Grtsinry43’s Blog","url":"https://blog.grtsinry43.com/","logo":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.grtsinry43.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"学习分享｜使用 Spring Boot + MyBatisPlus 提高效率，简化开发","description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.grtsinry43.com/2024/08/11/springboot-mybatisplus-quickstart/"},"author":{"@type":"Person","name":"Grtsinry43","image":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.grtsinry43.com/"},"publisher":{"@type":"Organization","name":"Grtsinry43’s Blog","logo":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://blog.grtsinry43.com/2024/08/11/springboot-mybatisplus-quickstart/","wordCount":0,"datePublished":"2024-08-10T16:05:33.000Z","dateModified":"2024-08-11T04:17:54.367Z","articleSection":"技术学习","keywords":"后端,Java,Spring Boot","image":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
