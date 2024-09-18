@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://blog.grtsinry43.com/2024/09/18/home-website-refactoring-nuxtjs/</loc>
+    <lastmod>2024-09-18</lastmod>
+  </url>
+  <url>
     <loc>https://blog.grtsinry43.com/2024/08/11/springboot-mybatisplus-quickstart/</loc>
     <lastmod>2024-08-11</lastmod>
   </url>

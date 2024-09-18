@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://blog.grtsinry43.com/tags/html/"/>
+  
+  <link rel="canonical" href="https://blog.grtsinry43.com/2024/09/18/home-website-refactoring-nuxtjs/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -36,19 +36,24 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="Grtsinry43’s Blog" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>标签：html - Grtsinry43’s Blog</title>
-  <meta name="keywords" content="代码,开发,生活,折腾,写作">
-  <meta desc name="description" content="一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待 - Grtsinry43 - Grtsinry43’s Blog">
+  <title>折腾记录｜使用 Nuxt.js 重写个人主页，使用 SSR 优化 SEO ，实现一些期待已久的效果 - Grtsinry43’s Blog</title>
+  <meta name="keywords" content="前端,Vue.js,JavaScript,Nuxt.js,代码,开发,生活,折腾,写作">
+  <meta desc name="description" content="在 22 年刚创建个人主页的时候，由于我的技术水平不够，只能用一些 wordpress typecho 这种直观的工具，后来因为换域名等等一系列的问题就被搁置了…再后来为了过备案，用图形化工具和 bootstrap 糊了一个，而如今熟练掌握 Vue 和 React 等框架之后，也到了完全重写的时候了，于是就有了这... - Grtsinry43 - Grtsinry43’s Blog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="Grtsinry43’s Blog">
-<meta property="og:url" content="https://blog.grtsinry43.com/tags/html/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="折腾记录｜使用 Nuxt.js 重写个人主页，使用 SSR 优化 SEO ，实现一些期待已久的效果">
+<meta property="og:url" content="https://blog.grtsinry43.com/2024/09/18/home-website-refactoring-nuxtjs/index.html">
 <meta property="og:site_name" content="Grtsinry43’s Blog">
-<meta property="og:description" content="一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待">
+<meta property="og:description" content="在 22 年刚创建个人主页的时候，由于我的技术水平不够，只能用一些 wordpress typecho 这种直观的工具，后来因为换域名等等一系列的问题就被搁置了…再后来为了过备案，用图形化工具和 bootstrap 糊了一个，而如今熟练掌握 Vue 和 React 等框架之后，也到了完全重写的时候了，于是就有了这段记录。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2024-09-18T10:09:49.000Z">
+<meta property="article:modified_time" content="2024-09-18T15:46:06.398Z">
 <meta property="article:author" content="Grtsinry43">
-<meta property="article:tag" content="代码,开发,生活,折腾,写作">
+<meta property="article:tag" content="前端">
+<meta property="article:tag" content="Vue.js">
+<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="Nuxt.js">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2798,7 +2803,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  dock' style="display: none;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2867,25 +2872,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://blog.grtsinry43.com/2024/06/09/learn-simple-frontend/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://blog.grtsinry43.com/2024/09/18/home-website-refactoring-nuxtjs/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Grtsinry43’s Blog">
   </span>
@@ -2894,72 +2883,341 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/06/09/learn-simple-frontend/"  itemprop="url">
-        学习分享｜原生三件套的网页效果
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      <p>这是学习前端基础，用原生三件套尤其是js实现效果一些学习过程的记录，首先是静态的小米商城，之后实现了一些效果，比如表格、轮播图、瀑布流等，都是为了提升自己原生js的dom操作能力</p>
     
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+      <h1 class="title" itemprop="name headline">
+        折腾记录｜使用 Nuxt.js 重写个人主页，使用 SSR 优化 SEO ，实现一些期待已久的效果
+      </h1>
+      <div class='new-meta-box'>
         
           
-          <a class='avatar' href='/'><img src='https://dogeoss.grtsinry43.com/img/author.jpeg'></a>
-          <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <meta itemprop="image" content="https://dogeoss.grtsinry43.com/img/author.jpeg">
-            <meta itemprop="name" content="Grtsinry43">
-            <meta itemprop="url" content="/">
-          </span>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-06-09T21:29:07+08:00">2024-06-09</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/">技术学习</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/" itemprop="url"><span itemprop="name">技术学习</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/06/09/learn-simple-frontend/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://dogeoss.grtsinry43.com/img/author.jpeg" class="lazyload" data-srcset="https://dogeoss.grtsinry43.com/img/author.jpeg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">Grtsinry43</p>
+  </a>
 </div>
 
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-09-18T18:09:49+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2024年9月18日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span data-path="/2024/09/18/home-website-refactoring-nuxtjs/" class="waline-pageview-count">
+        <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
+      </span>
+      
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
+        
+          
+            
+<div class="new-meta-item comments-count">
+   
+  
+  <a href="/2024/09/18/home-website-refactoring-nuxtjs/#comments">
+    <i class="fa-solid fa-comment-dots fa-fw"></i>
+    <p>
+      <span data-path="/2024/09/18/home-website-refactoring-nuxtjs/" class="waline-comment-count">
+        <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
+      </span> 
+       
+        <span class="leancloud-comments-count">&nbsp;条评论</span> 
+       
+    </p>
+  </a>
+</div>
+
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：1.4k 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：6 分钟</p>
+    </a>
+  </div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <p>在 22 年刚创建个人主页的时候，由于我的技术水平不够，只能用一些 wordpress typecho 这种直观的工具，后来因为换域名等等一系列的问题就被搁置了…再后来为了过备案，用图形化工具和 bootstrap 糊了一个，而如今熟练掌握 Vue 和 React 等框架之后，也到了完全重写的时候了，于是就有了这段记录。</p>
+<span id="more"></span>
+
+<p>关键词：Vue SSR，Nuxt.js</p>
+<blockquote>
+<p>网页的开发一直在持续哇…本文章会持续跟进更新</p>
+</blockquote>
+<p>最后链接：<a target="_blank" rel="noopener" href="https://www.grtsinry43.com/">https://www.grtsinry43.com/</a></p>
+<h2 id="框架选择"><a href="#框架选择" class="headerlink" title="框架选择"></a>框架选择</h2><p>首先，对于这种主页类的网站，单纯的 Vue React SPA（单页面应用）肯定是不行的，比如说这里我们使用 pure-admin 模板创建的一个后台系统（Vue3），对于搜索引擎来说不会等待页面完全加载和渲染，而抓到的这些内容无法分析网站的关键词和主题等，导致很难被搜索引擎排名考前，因此我们不得不从历史中汲取经验，从服务端生成静态网页，到了客户端渲染的单页面应用，又回到了服务端渲染</p>
+<p><img src="https://dogeoss.grtsinry43.com/2024/08/screenshot_20240830_183309.png" class="lazyload" data-srcset="https://dogeoss.grtsinry43.com/2024/08/screenshot_20240830_183309.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="这样是很难做好 SEO 的"></p>
+<p>对于个人主页这种比较小的项目，我更喜欢使用 Vue 来完成开发，也就是其对应的 SSR 框架——Nuxt.js</p>
+<h2 id="快速上手"><a href="#快速上手" class="headerlink" title="快速上手"></a>快速上手</h2><p>由于要使用 <code>NuxtUI</code>，我们便可以使用官方的创建工程的脚手架</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npx nuxi@latest init -t ui [项目名称]</span><br></pre></td></tr></table></figure>
+
+<p>创建好项目之后，我们便可以像正常写 Vue 一样来进行开发啦</p>
+<h3 id="前置准备工作"><a href="#前置准备工作" class="headerlink" title="前置准备工作"></a>前置准备工作</h3><p>在代码块以及项目名称中，我们选用一个等宽而且适用于代码的字体 <code>JetBrains Mono</code>，于是我们可以在 <code>assets/fonts.css</code> 中这样进行引入</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@font-face</span> &#123;</span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">&#x27;JetBrains Mono&#x27;</span>;</span><br><span class="line">    <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">&#x27;https://gcore.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Medium.woff2&#x27;</span>) <span class="built_in">format</span>(<span class="string">&#x27;woff2&#x27;</span>);</span><br><span class="line">    <span class="attribute">font-weight</span>: <span class="number">500</span>;</span><br><span class="line">    <span class="attribute">font-style</span>: normal;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.font-jb-mono</span> &#123;</span><br><span class="line">    <span class="comment">/* 设置fallback防止出现宋体 */</span></span><br><span class="line">    <span class="attribute">font-family</span>: <span class="string">&#x27;JetBrains Mono&#x27;</span>, <span class="string">&#x27;Courier New&#x27;</span>, Courier, <span class="string">&#x27;Lucida Sans Typewriter&#x27;</span>, <span class="string">&#x27;Lucida Console&#x27;</span>, <span class="string">&#x27;Microsoft YaHei&#x27;</span>, <span class="string">&#x27;WenQuanYi Micro Hei&#x27;</span>, monospace;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>注意这里要设置好 fallback 字体，因为某些 Windows 系统（雾）默认会回落到宋体，导致中文字体不堪入目</p>
+<p>以后当我们需要使用的时候只需要挂上这个类名就好</p>
+<h3 id="防止掉头发"><a href="#防止掉头发" class="headerlink" title="防止掉头发"></a>防止掉头发</h3><p>经典防止掉头发几件套：<code>assets/global.css</code></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">* &#123;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">    <span class="attribute">box-sizing</span>: border-box;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">a</span> &#123;</span><br><span class="line">    <span class="attribute">text-decoration</span>: none;</span><br><span class="line">    <span class="attribute">color</span>: inherit;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">ul</span> &#123;</span><br><span class="line">    <span class="attribute">list-style</span>: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="疑难解决方案与创新点"><a href="#疑难解决方案与创新点" class="headerlink" title="疑难解决方案与创新点"></a>疑难解决方案与创新点</h2><h3 id="桌面与移动端导航栏适配"><a href="#桌面与移动端导航栏适配" class="headerlink" title="桌面与移动端导航栏适配"></a>桌面与移动端导航栏适配</h3><p>为了达到最完美的使用效果，我直接写了 <code>NavBar</code> 和 <code>NavBarMobile</code> 两个组件，通过简单的媒体查询来进行切换</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">@media</span> (<span class="attribute">max-width</span>: <span class="number">800px</span>) &#123;</span><br><span class="line">  <span class="selector-class">.nav-bar-desktop</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: none;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="selector-class">.nav-bar-mobile</span> &#123;</span><br><span class="line">    <span class="attribute">display</span>: block;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>对于移动段的 Navbar，我选择了可收起菜单来优化体验</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">const toggleMenu = () =&gt; &#123;</span><br><span class="line">  isMenuOpen.value = !isMenuOpen.value</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const toggleLocale = () =&gt; &#123;</span><br><span class="line">  locale.value = locale.value === &#x27;en&#x27; ? &#x27;zh&#x27; : &#x27;en&#x27;;</span><br><span class="line">&#125;;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div</span><br><span class="line">      class=&quot;nav-container fixed w-full bg-opacity-80 bg-blue-50 text-blue-950 dark:bg-opacity-80 dark:bg-black dark:text-white&quot;&gt;</span><br><span class="line">    &lt;UContainer class=&quot;flex flex-row items-center justify-between nav-inner&quot;&gt;</span><br><span class="line">      &lt;div class=&quot;nav-logo&quot;&gt;</span><br><span class="line">        &lt;NuxtLink :to=&quot;localePath(&#x27;/&#x27;)&quot; class=&quot;font-bold&quot;&gt;&#123;&#123; $t(&#x27;homePageTitle&#x27;) &#125;&#125;&lt;/NuxtLink&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">      &lt;!-- Toggle Button for Mobile Menu --&gt;</span><br><span class="line">      &lt;UButton class=&quot;lg:hidden bg-opacity-0 dark:bg-opacity-0&quot; @click=&quot;toggleMenu&quot;</span><br><span class="line">               icon=&quot;i-heroicons:bars-3-bottom-right&quot;</span><br><span class="line">               square</span><br><span class="line">               color=&quot;gray&quot;</span><br><span class="line">      &gt;</span><br><span class="line">      &lt;/UButton&gt;</span><br><span class="line">      &lt;!-- Theme Toggle Button --&gt;</span><br><span class="line">      &lt;div class=&quot;theme-option lg:block&quot;&gt;</span><br><span class="line">        &lt;UToggle</span><br><span class="line">            on-icon=&quot;i-heroicons-moon-20-solid&quot;</span><br><span class="line">            off-icon=&quot;i-heroicons-sun-20-solid&quot;</span><br><span class="line">            :model-value=&quot;colorMode.preference === &#x27;dark&#x27;&quot;</span><br><span class="line">            @change=&quot;toggleTheme&quot;</span><br><span class="line">        /&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">      &lt;!-- Icons Container --&gt;</span><br><span class="line">      &lt;div class=&quot;actions-container hidden lg:grid&quot;&gt;</span><br><span class="line">        &lt;Icon class=&quot;language-toggle-icon hover:text-blue-400 dark:hover:text-blue-600&quot; name=&quot;i-heroicons-language&quot; @click=&quot;toggleLocale&quot;/&gt;</span><br><span class="line">        &lt;Icon class=&quot;rss-icon hover:text-blue-400 dark:hover:text-blue-600&quot; name=&quot;i-heroicons-rss&quot;/&gt;</span><br><span class="line">        &lt;a href=&quot;https://github.com/grtsinry43/home-web&quot; target=&quot;_blank&quot;&gt;</span><br><span class="line">          &lt;Icon class=&quot;github-icon hover:text-blue-400 dark:hover:text-blue-600&quot; name=&quot;i-grommet-icons:github&quot;/&gt;</span><br><span class="line">        &lt;/a&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    &lt;/UContainer&gt;</span><br><span class="line"></span><br><span class="line">    &lt;!-- Mobile Navigation Menu --&gt;</span><br><span class="line">    &lt;div v-show=&quot;isMenuOpen&quot;</span><br><span class="line">         class=&quot;nav-extend-container flex flex-col items-center bg-blue-50 bg-opacity-85 dark:bg-black dark:bg-opacity-80 backdrop-blur-lg&quot;&gt;</span><br><span class="line">      这里就是菜单项目啦</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="深浅色模式的极不优雅解决方案"><a href="#深浅色模式的极不优雅解决方案" class="headerlink" title="深浅色模式的极不优雅解决方案"></a>深浅色模式的极不优雅解决方案</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123;onMounted&#125; <span class="keyword">from</span> <span class="string">&quot;vue&quot;</span>;</span><br><span class="line"><span class="keyword">const</span> colorMode = <span class="title function_">useColorMode</span>();</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="title function_">toggleTheme</span> = (<span class="params"></span>) =&gt; &#123;</span><br><span class="line">  <span class="keyword">if</span> (colorMode.<span class="property">preference</span> === <span class="string">&#x27;system&#x27;</span>) &#123;</span><br><span class="line">    colorMode.<span class="property">preference</span> = colorMode.<span class="property">value</span> === <span class="string">&#x27;dark&#x27;</span> ? <span class="string">&#x27;light&#x27;</span> : <span class="string">&#x27;dark&#x27;</span>;</span><br><span class="line">    buttonState.<span class="property">value</span> = colorMode.<span class="property">preference</span> === <span class="string">&#x27;dark&#x27;</span>;</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    colorMode.<span class="property">preference</span> = colorMode.<span class="property">preference</span> === <span class="string">&#x27;dark&#x27;</span> ? <span class="string">&#x27;light&#x27;</span> : <span class="string">&#x27;dark&#x27;</span>;</span><br><span class="line">    buttonState.<span class="property">value</span> = colorMode.<span class="property">preference</span> === <span class="string">&#x27;dark&#x27;</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> buttonState = <span class="title function_">ref</span>(<span class="literal">false</span>);</span><br><span class="line"></span><br><span class="line"><span class="title function_">onMounted</span>(<span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="comment">// 根据最开始的主题设置按钮的图标</span></span><br><span class="line">  buttonState.<span class="property">value</span> = colorMode.<span class="property">value</span> === <span class="string">&#x27;dark&#x27;</span>;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>这里深色模式的实现有点太不优雅了，我发现 NuxtUI 官网确实有一个跟随主题的开关，但是自己实现起来就是很奇怪，对于输出的 <code>colorMode</code> 有两个用的上的属性，一个是 <code>preference</code> 对应偏好主题（light dark system），一个是 <code>value</code> 对应当前主题（light dark），由于偏好能被保存下来，于是选择在切换按钮时改变 <code>preference</code> 的对应的值</p>
+<p>当组件被挂载（onMounted），首先根据 value 设置初始的状态，当点击切换时，对于当前是否偏好系统要采取不同的方式来切换，不知道大佬们有没有什么好办法，或者过几天我再看看 Nuxt 源码</p>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+        
+  <div class="related_posts">
+    <section class='header'>
+      <i class="fa-solid fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
+    </section>
+    <section class='body'>
+      <div class="vlts-rps"><a class="item" href="/2024/07/03/wx-js-sdk-usage-vue3/" title="学习分享｜Vue3项目中使用微信SDK开发微信网页" rel="bookmark "><span class="title">学习分享｜Vue3项目中使用微信SDK开发微信网页</span><span class="excerpt">最近在开发一个微信 H5 的项目，采用的是 Vue3+FastAPI，正好学习下微信用户登录，api 配置和调用，以及前后...</span></a><a class="item" href="/2024/07/11/202406-frontend-summary/" title="六月初至七月中旬｜前端学习简要总结，生活的小回顾" rel="bookmark "><span class="title">六月初至七月中旬｜前端学习简要总结，生活的小回顾</span><span class="excerpt">在这段时间里我通过完成多个项目，深入学习了前端和全栈开发的技术。主要使用了 Vue3、C++ Web 框架、jwt 鉴权、...</span></a><a class="item" href="/2024/06/09/less-media-variable/" title="问题解决｜使用Less变量和媒体查询实现深浅色模式适配" rel="bookmark "><span class="title">问题解决｜使用Less变量和媒体查询实现深浅色模式适配</span><span class="excerpt">使用Less变量简化css写法，并不影响css变量和媒体查询在深浅模式切换时的效果</span></a><a class="item" href="/2024/06/09/learn-simple-frontend/" title="学习分享｜原生三件套的网页效果" rel="bookmark "><span class="title">学习分享｜原生三件套的网页效果</span><span class="excerpt">这是学习前端基础，用原生三件套尤其是js实现效果一些学习过程的记录，首先是静态的小米商城，之后实现了一些效果，比如表格、轮...</span></a><a class="item" href="/2024/06/27/kubernetes-quick-start/" title="学习分享｜Kubernetes快速上手，快速了解及开始使用" rel="bookmark "><span class="title">学习分享｜Kubernetes快速上手，快速了解及开始使用</span><span class="excerpt">最近感觉 K8s 挺火的，也许是时下比较热门的技术栈了，学习过程比较曲折复杂，分享一下自己的学习过程，从快速入门，到一些深...</span></a></div></section></div>
+      
+      <!-- 版权声明组件 -->
+      
+        
+          
+          <div class="copyright license">
+            <div class="license-title">折腾记录｜使用 Nuxt.js 重写个人主页，使用 SSR 优化 SEO ，实现一些期待已久的效果</div>
+            <div class="license-link"><a href="https://blog.grtsinry43.com/2024/09/18/home-website-refactoring-nuxtjs/">https://blog.grtsinry43.com/2024/09/18/home-website-refactoring-nuxtjs/</a>
+            </div>
+            <div class="license-meta">
+              <div class="license-meta-item">
+                <div class="license-meta-title">本文作者</div>
+                <div class="license-meta-text">Grtsinry43</div>
+              </div>
+              <div class="license-meta-item">
+                <div class="license-meta-title">发布于</div>
+                <div class="license-meta-text">2024年9月18日</div>
+              </div>
+              
+              
+              <div class="license-meta-item">
+                <div class="license-meta-title">许可协议</div>
+                <div class="license-meta-text"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh#" target="_blank">CC BY-NC-SA 4.0</a></div>
+              </div>
+            </div>
+            <div class="license-statement">署名-非商业性使用-相同方式共享 4.0 国际。</div>
           </div>
         
       
-    
-  </section>
+      <!-- 打赏组件 -->
+      
+    </div>
+  
   
     
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-09-18T23:46:06+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2024年9月18日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%89%8D%E7%AB%AF/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>前端</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Vue-js/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Vue.js</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/JavaScript/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>JavaScript</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Nuxt-js/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Nuxt.js</p></a></div>
+  <span hidden itemprop="keywords">前端 Vue.js JavaScript Nuxt.js</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.grtsinry43.com/2024/09/18/home-website-refactoring-nuxtjs/&title=折腾记录｜使用 Nuxt.js 重写个人主页，使用 SSR 优化 SEO ，实现一些期待已久的效果 - Grtsinry43’s Blog&summary=在 22 年刚创建个人主页的时候，由于我的技术水平不够，只能用一些 wordpress typecho 这种直观的工具，后来因为换域名等等一系列的问题就被搁置了…再后来为了过备案，用图形化工具和 bootstrap 糊了一个，而如今熟练掌握 Vue 和 React 等框架之后，也到了完全重写的时候了，于是就有了这段记录。"
+          
+          >
+          
+            <img src="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://blog.grtsinry43.com/2024/09/18/home-website-refactoring-nuxtjs/&title=折腾记录｜使用 Nuxt.js 重写个人主页，使用 SSR 优化 SEO ，实现一些期待已久的效果 - Grtsinry43’s Blog&summary=在 22 年刚创建个人主页的时候，由于我的技术水平不够，只能用一些 wordpress typecho 这种直观的工具，后来因为换域名等等一系列的问题就被搁置了…再后来为了过备案，用图形化工具和 bootstrap 糊了一个，而如今熟练掌握 Vue 和 React 等框架之后，也到了完全重写的时候了，于是就有了这段记录。"
+          
+          >
+          
+            <img src="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://blog.grtsinry43.com/2024/09/18/home-website-refactoring-nuxtjs/&title=折腾记录｜使用 Nuxt.js 重写个人主页，使用 SSR 优化 SEO ，实现一些期待已久的效果 - Grtsinry43’s Blog&summary=在 22 年刚创建个人主页的时候，由于我的技术水平不够，只能用一些 wordpress typecho 这种直观的工具，后来因为换域名等等一系列的问题就被搁置了…再后来为了过备案，用图形化工具和 bootstrap 糊了一个，而如今熟练掌握 Vue 和 React 等框架之后，也到了完全重写的时候了，于是就有了这段记录。"
+          
+          >
+          
+            <img src="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        
+        <div class='hoverbox'>
+          <a class='share'><img src="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/wechat.png" class="lazyload" data-srcset="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
+          <div class='target'>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATgAAAE4CAAAAADqFLC2AAADnElEQVR42u3aQW7DMAwEwPz/0+0DisDikm7oYHRLYVvS6LIl9foxovFCAA4cOHAGOHBL4F7h+PPBi+eu3r967nQd7743tV9w4MCBAwcOHLhtcMcB8HDj1YVPref0gOPvgwMHDhw4cODALYWrbqwaRFO4u54v7xccOHDgwIEDB+7L4dINVgui6fvgwIEDBw4cOHDgZt5P55n6Djhw4MCBAwcO3NPhphrAaYDtXlh8TCcfHDhw4MCBAwduCG66MLj9d7xfcODAgQMHDhy4JXDdcQo6HWinAm55v+DAgQMHDhw4cEvg0oCYFgKnGsxd8HR/4MCBAwcOHDhwW+CqG+4G37SgOHUg7QMHBw4cOHDgwIFbAjdVKEwLj2kwrh7M1d+P9wEOHDhw4MCBA7cErloInCpIpkG7up7p58CBAwcOHDhw4LbDpVBTAbo6f1oYLT8PDhw4cODAgQO3DK4aOKcazN3gnQbi+D1w4MCBAwcOHLglcKcLqAbg9GCmLgKmB3bZ0AYHDhw4cODAgVsCV20sd4Gq86QXBNNCJThw4MCBAwcO3NPgphrH3QLo1LqqB3C8fnDgwIEDBw4cuGVw5Q+EG+5uoFoATQum4MCBAwcOHDhwT4FLwaoX96YvEnbXWZ4PHDhw4MCBAwfuYXDVBXcDaAp9V3AHBw4cOHDgwIHbDtcNvN0LhVMHlBZGL4M4OHDgwIEDBw7cErg08E4trAozVVCNnwMHDhw4cODAgVsG120A37WhdMNTDfG3hUxw4MCBAwcOHLglcN2Lgt3CZjVIHzeQhxvX4MCBAwcOHDhw2+BSqO7vbiCeapgfF17BgQMHDhw4cOCWw00H3KmFTx1ItUALDhw4cODAgQP3FLhuIfEUoBqEqwdZDebj/zmAAwcOHDhw4MD9M1xaaEyD8fQBVBvPYw1pcODAgQMHDhy4D8FNFRrvDs7VAJseJDhw4MCBAwcO3Fa47qhOfBw0m43w6YMFBw4cOHDgwIHbBje1kHJBsFmYTA8gbUyDAwcOHDhw4MBthesG3umgOx2U0++CAwcOHDhw4MA9Ba7dsA0b2Cng1DgFBwcOHDhw4MCB+1a44wUcztsthKbf+fcADA4cOHDgwIED9yG4aoGyCpo2qtOLkuDAgQMHDhw4cE+D617sSwuP06Dd+d7OCw4cOHDgwIEDtwzurgbuFHB68bBasCwHYHDgwIEDBw4cuA/BGcVCJwJw4MCBM8CB++z4BQMGACbGbl95AAAAAElFTkSuQmCC">
+          </div>
+        </div>
+      
+    
+      
+        <a class="-mob-share-telegram" title="" rel="external nofollow noopener noreferrer noopener"
+          
+            target="_blank" href="https://t.me/share/url?url=https://blog.grtsinry43.com/2024/09/18/home-website-refactoring-nuxtjs/&text=折腾记录｜使用 Nuxt.js 重写个人主页，使用 SSR 优化 SEO ，实现一些期待已久的效果 - Grtsinry43’s Blog"
+          
+          >
+          
+            <img src="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/telegram.png" class="lazyload" data-srcset="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/telegram.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2024/08/11/springboot-mybatisplus-quickstart/'>
+          <p class='title'>学习分享｜使用 Spring Boot + MyBatisPlus 提高效率，简化开发<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>最近一段时间，由于一些项目的需求，于是被迫用很快的速度学完了 Spring Framework，SpringMVC，Spring Boot。
+然而实际上，我认为学习后端框架原理，前端的脚手架开发...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
   
 
 
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2024/09/18/home-website-refactoring-nuxtjs/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-  
+      <p cst>在这里留下你的评论吧～</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2968,62 +3226,25 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-<section class="widget blogger desktop pjax">
-  <div class='content'>
     
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://dogeoss.grtsinry43.com/img/author.jpeg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>Grtsinry43</h2>
-        
-        
-          <p>希望能一直做自己喜欢的事情！</p>
+  
 
-        
-        
-          <p><span id="jinrishici-sentence">Grtsinry43’s Blog</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
+  
     
     
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:grtsinry43@outlook.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/grtsinry43"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
+      
+
+<section class="widget desktop mobile pjax">
+  
+  <header>
     
+      <i class="fa-solid fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2024/09/18/home-website-refactoring-nuxtjs/"><div class="item"><time>2024-09-18</time><span>技术学习</span></div><span>折腾记录｜使用 Nuxt.js 重写个人主页，使用 SSR 优化 SEO ，实现一些期待已久的效果</span></a></li><li><a class="widget-last" href="/2024/08/11/springboot-mybatisplus-quickstart/"><div class="item"><time>2024-08-11</time><span>技术学习</span></div><span>学习分享｜使用 Spring Boot + MyBatisPlus 提高效率，简化开发</span></a></li><li><a class="widget-last" href="/2024/07/03/wx-js-sdk-usage-vue3/"><div class="item"><time>2024-08-11</time><span>技术学习</span></div><span>学习分享｜Vue3项目中使用微信SDK开发微信网页</span></a></li><li><a class="widget-last" href="/2024/06/09/learn-simple-frontend/"><div class="item"><time>2024-08-11</time><span>技术学习</span></div><span>学习分享｜原生三件套的网页效果</span></a></li><li><a class="widget-last" href="/2024/07/11/202406-frontend-summary/"><div class="item"><time>2024-08-11</time><span>生活记录</span></div><span>六月初至七月中旬｜前端学习简要总结，生活的小回顾</span></a></li></ul>
   </div>
 </section>
 
@@ -3034,35 +3255,30 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
 
+  <section class='widget desktop mobile pjax music'>
+    
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/%E5%A6%99%E7%AC%94%E7%94%9F%E8%8A%B1/" href="/categories/%E5%A6%99%E7%AC%94%E7%94%9F%E8%8A%B1/"
-            active-action="action-categoriesE5A699E7AC94E7949FE88AB1"
-            ><div class='name'>妙笔生花</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/" href="/categories/%E6%8A%80%E6%9C%AF%E5%AD%A6%E4%B9%A0/"
-            active-action="action-categoriesE68A80E69CAFE5ADA6E4B9A0"
-            ><div class='name'>技术学习</div><div class='badge'>(7)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/" href="/categories/%E7%94%9F%E6%B4%BB%E8%AE%B0%E5%BD%95/"
-            active-action="action-categoriesE7949FE6B4BBE8AEB0E5BD95"
-            ><div class='name'>生活记录</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
+      
+
+  
+    <meting-js
+      theme='#1BCDFC'
+      autoplay='false'
+      volume='0.7'
+      loop='all'
+      order='list'
+      fixed='false'
+      list-max-height='320px'
+      server='netease'
+      type='playlist'
+      id='7620200216'
+      list-folded='true'>
+    </meting-js>
+  
+
+
     </div>
   </section>
 
@@ -3124,58 +3340,41 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
   
 
+
+<div class="widget-sticky pjax">
+
   
-    
-    
-      
   
-  <section class="widget tagcloud desktop mobile pjax">
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
     
   <header>
     
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <a href="/tags/Java/" style="font-size: 14px; color: #999">Java</a> <a href="/tags/JavaScript/" style="font-size: 24px; color: #555">JavaScript</a> <a href="/tags/Nuxt-js/" style="font-size: 14px; color: #999">Nuxt.js</a> <a href="/tags/Spring-Boot/" style="font-size: 14px; color: #999">Spring Boot</a> <a href="/tags/Vue-js/" style="font-size: 20.67px; color: #6c6c6c">Vue.js</a> <a href="/tags/css/" style="font-size: 17.33px; color: #828282">css</a> <a href="/tags/html/" style="font-size: 14px; color: #999">html</a> <a href="/tags/kubernetes/" style="font-size: 14px; color: #999">kubernetes</a> <a href="/tags/less/" style="font-size: 14px; color: #999">less</a> <a href="/tags/linux/" style="font-size: 14px; color: #999">linux</a> <a href="/tags/%E4%BD%9C%E6%96%87/" style="font-size: 14px; color: #999">作文</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 17.33px; color: #828282">前端</a> <a href="/tags/%E5%90%8E%E7%AB%AF/" style="font-size: 14px; color: #999">后端</a> <a href="/tags/%E5%AE%89%E5%8D%93/" style="font-size: 14px; color: #999">安卓</a> <a href="/tags/%E5%BE%AE%E4%BF%A1/" style="font-size: 14px; color: #999">微信</a> <a href="/tags/%E6%80%BB%E7%BB%93/" style="font-size: 14px; color: #999">总结</a> <a href="/tags/%E6%95%B4%E7%90%86/" style="font-size: 14px; color: #999">整理</a> <a href="/tags/%E6%97%A5%E5%B8%B8/" style="font-size: 14px; color: #999">日常</a> <a href="/tags/%E6%A2%A6%E6%83%B3/" style="font-size: 14px; color: #999">梦想</a> <a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 14px; color: #999">生活</a> <a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 14px; color: #999">网络</a> <a href="/tags/%E8%BF%90%E7%BB%B4/" style="font-size: 14px; color: #999">运维</a> <a href="/tags/%E9%9D%92%E6%98%A5/" style="font-size: 14px; color: #999">青春</a> <a href="/tags/%E9%AB%98%E8%80%83/" style="font-size: 14px; color: #999">高考</a>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A1%86%E6%9E%B6%E9%80%89%E6%8B%A9"><span class="toc-number">1.</span> <span class="toc-text">框架选择</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B"><span class="toc-number">2.</span> <span class="toc-text">快速上手</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E7%BD%AE%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-number">2.1.</span> <span class="toc-text">前置准备工作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%98%B2%E6%AD%A2%E6%8E%89%E5%A4%B4%E5%8F%91"><span class="toc-number">2.2.</span> <span class="toc-text">防止掉头发</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%96%91%E9%9A%BE%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E4%B8%8E%E5%88%9B%E6%96%B0%E7%82%B9"><span class="toc-number">3.</span> <span class="toc-text">疑难解决方案与创新点</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A1%8C%E9%9D%A2%E4%B8%8E%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%AF%BC%E8%88%AA%E6%A0%8F%E9%80%82%E9%85%8D"><span class="toc-number">3.1.</span> <span class="toc-text">桌面与移动端导航栏适配</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%B1%E6%B5%85%E8%89%B2%E6%A8%A1%E5%BC%8F%E7%9A%84%E6%9E%81%E4%B8%8D%E4%BC%98%E9%9B%85%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-number">3.2.</span> <span class="toc-text">深浅色模式的极不优雅解决方案</span></a></li></ol></li></ol>
     </div>
   </section>
 
-
-    
   
-
-  
-    
-    
-      
-
-<section class="widget desktop mobile pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2024/09/18/home-website-refactoring-nuxtjs/"><div class="item"><time>2024-09-18</time><span>技术学习</span></div><span>折腾记录｜使用 Nuxt.js 重写个人主页，使用 SSR 优化 SEO ，实现一些期待已久的效果</span></a></li><li><a class="widget-last" href="/2024/08/11/springboot-mybatisplus-quickstart/"><div class="item"><time>2024-08-11</time><span>技术学习</span></div><span>学习分享｜使用 Spring Boot + MyBatisPlus 提高效率，简化开发</span></a></li><li><a class="widget-last" href="/2024/07/03/wx-js-sdk-usage-vue3/"><div class="item"><time>2024-08-11</time><span>技术学习</span></div><span>学习分享｜Vue3项目中使用微信SDK开发微信网页</span></a></li><li><a class="widget-last" href="/2024/06/09/learn-simple-frontend/"><div class="item"><time>2024-08-11</time><span>技术学习</span></div><span>学习分享｜原生三件套的网页效果</span></a></li><li><a class="widget-last" href="/2024/07/11/202406-frontend-summary/"><div class="item"><time>2024-08-11</time><span>生活记录</span></div><span>六月初至七月中旬｜前端学习简要总结，生活的小回顾</span></a></li></ul>
-  </div>
-</section>
-
-    
-  
-
-
-<div class="widget-sticky pjax">
 
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3195,13 +3394,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -4539,7 +4739,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Grtsinry43’s Blog","url":"https://blog.grtsinry43.com/","logo":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Grtsinry43","image":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.grtsinry43.com/","sameAs":["https://github.com/volantis-x"],"description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.grtsinry43.com/","name":"Grtsinry43’s Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.grtsinry43.com/tags/html/","name":"html"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Grtsinry43’s Blog","url":"https://blog.grtsinry43.com/","keywords":"代码,开发,生活,折腾,写作","description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待","author":{"@type":"Person","name":"Grtsinry43","image":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.grtsinry43.com/","description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待"},"publisher":{"@type":"Organization","name":"Grtsinry43’s Blog","url":"https://blog.grtsinry43.com/","logo":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.grtsinry43.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Grtsinry43","image":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.grtsinry43.com/"},"publisher":{"@type":"Organization","name":"Grtsinry43’s Blog","logo":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Grtsinry43’s Blog","url":"https://blog.grtsinry43.com/","logo":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Grtsinry43","image":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.grtsinry43.com/","sameAs":["https://github.com/volantis-x"],"description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.grtsinry43.com/","name":"Grtsinry43’s Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.grtsinry43.com/categories/技术学习/","name":"技术学习"}},{"@type":"ListItem","position":3,"item":{"@id":"https://blog.grtsinry43.com/2024/09/18/home-website-refactoring-nuxtjs/","name":"折腾记录｜使用 Nuxt.js 重写个人主页，使用 SSR 优化 SEO ，实现一些期待已久的效果"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Grtsinry43’s Blog","url":"https://blog.grtsinry43.com/","keywords":"代码,开发,生活,折腾,写作","description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待","author":{"@type":"Person","name":"Grtsinry43","image":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.grtsinry43.com/","description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待"},"publisher":{"@type":"Organization","name":"Grtsinry43’s Blog","url":"https://blog.grtsinry43.com/","logo":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.grtsinry43.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"折腾记录｜使用 Nuxt.js 重写个人主页，使用 SSR 优化 SEO ，实现一些期待已久的效果","description":"在 22 年刚创建个人主页的时候，由于我的技术水平不够，只能用一些 wordpress typecho 这种直观的工具，后来因为换域名等等一系列的问题就被搁置了…再后来为了过备案，用图形化工具和 bootstrap 糊了一个，而如今熟练掌握 Vue 和 React 等框架之后，也到了完全重写的时候了，于是就有了这段记录。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.grtsinry43.com/2024/09/18/home-website-refactoring-nuxtjs/"},"author":{"@type":"Person","name":"Grtsinry43","image":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.grtsinry43.com/"},"publisher":{"@type":"Organization","name":"Grtsinry43’s Blog","logo":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://blog.grtsinry43.com/2024/09/18/home-website-refactoring-nuxtjs/","wordCount":161,"datePublished":"2024-09-18T10:09:49.000Z","dateModified":"2024-09-18T15:46:06.398Z","articleSection":"技术学习","keywords":"前端,Vue.js,JavaScript,Nuxt.js","image":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
