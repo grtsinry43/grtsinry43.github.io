@@ -1,3 +1,5 @@
+https://blog.grtsinry43.com/moments/index.html
+https://blog.grtsinry43.com/friends/index.html
 https://blog.grtsinry43.com/2024/09/18/home-website-refactoring-nuxtjs/
 https://blog.grtsinry43.com/2024/08/11/springboot-mybatisplus-quickstart/
 https://blog.grtsinry43.com/2024/07/03/wx-js-sdk-usage-vue3/
@@ -8,7 +10,6 @@ https://blog.grtsinry43.com/2024/06/09/less-media-variable/
 https://blog.grtsinry43.com/2023/06/15/article-archive/
 https://blog.grtsinry43.com/2023/06/16/helloback/
 https://blog.grtsinry43.com/2024/06/27/kubernetes-quick-start/
-https://blog.grtsinry43.com/friends/index.html
 https://blog.grtsinry43.com/memory/index.html
 https://blog.grtsinry43.com/comments/index.html
 https://blog.grtsinry43.com/tags/index.html
