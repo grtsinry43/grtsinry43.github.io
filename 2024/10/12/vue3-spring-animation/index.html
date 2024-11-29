@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://blog.grtsinry43.com/tags/"/>
+  
+  <link rel="canonical" href="https://blog.grtsinry43.com/2024/10/12/vue3-spring-animation/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -36,21 +36,24 @@
   <!-- feed -->
       <link rel="alternate" href="/atom.xml" title="Grtsinry43’s Blog" type="application/atom+xml">
   <!-- 页面元数据 -->
-  <title>Grtsinry43’s Blog</title>
-  <meta name="keywords" content="代码,开发,生活,折腾,写作">
-  <meta desc name="description" content="一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待 - Grtsinry43 - Grtsinry43’s Blog">
+  <title>学习分享｜利用Vue自定义指令（directives）实现全站动画效果 - Grtsinry43’s Blog</title>
+  <meta name="keywords" content="前端,Vue.js,JavaScript,Nuxt.js,代码,开发,生活,折腾,写作">
+  <meta desc name="description" content="最近一直在学习 React 高阶知识，因此对于主页的开发再一次停滞了，主要也是一段时间内没有找到什么灵感，今天空闲时间打开又添加了一些另外的功能，其中包括了折腾了好久的主页加载 Spring （不是那个 Spring 啦）弹簧效果和模糊效果。 - Grtsinry43 - Grtsinry43’s Blog">
   
-<meta property="og:type" content="website">
-<meta property="og:title" content="Grtsinry43’s Blog">
-<meta property="og:url" content="https://blog.grtsinry43.com/tags/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="学习分享｜利用Vue自定义指令（directives）实现全站动画效果">
+<meta property="og:url" content="https://blog.grtsinry43.com/2024/10/12/vue3-spring-animation/index.html">
 <meta property="og:site_name" content="Grtsinry43’s Blog">
-<meta property="og:description" content="一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待">
+<meta property="og:description" content="最近一直在学习 React 高阶知识，因此对于主页的开发再一次停滞了，主要也是一段时间内没有找到什么灵感，今天空闲时间打开又添加了一些另外的功能，其中包括了折腾了好久的主页加载 Spring （不是那个 Spring 啦）弹簧效果和模糊效果。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2024-11-29T03:26:20.565Z">
-<meta property="article:modified_time" content="2024-11-29T03:26:20.565Z">
+<meta property="article:published_time" content="2024-10-12T13:19:25.259Z">
+<meta property="article:modified_time" content="2024-11-29T03:25:20.877Z">
 <meta property="article:author" content="Grtsinry43">
-<meta property="article:tag" content="代码,开发,生活,折腾,写作">
+<meta property="article:tag" content="前端">
+<meta property="article:tag" content="Vue.js">
+<meta property="article:tag" content="JavaScript">
+<meta property="article:tag" content="Nuxt.js">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2834,7 +2837,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper tag dock' style="display: none;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2910,23 +2913,350 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://blog.grtsinry43.com/2024/10/12/vue3-spring-animation/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Grtsinry43’s Blog">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Grtsinry43’s Blog">
+    <meta itemprop="description" content="一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待">
+  </span>
   
+
+
+  
+    <span hidden>
+      <meta itemprop="image" content="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  <div class="article-meta" id="top">
     
-      <div class='post-wrapper'>
-        <article id="tag" class="post article white-box reveal shadow floatable blur">
-          <h2></h2>
-          <div class="all-tags">
-            
-            <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/" rel="tag">Java</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/" rel="tag">JavaScript</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Nuxt-js/" rel="tag">Nuxt.js</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Spring-Boot/" rel="tag">Spring Boot</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Vue-js/" rel="tag">Vue.js</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/css/" rel="tag">css</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/" rel="tag">html</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/kubernetes/" rel="tag">kubernetes</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/less/" rel="tag">less</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/linux/" rel="tag">linux</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BD%9C%E6%96%87/" rel="tag">作文</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF/" rel="tag">前端</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%90%8E%E7%AB%AF/" rel="tag">后端</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%AE%89%E5%8D%93/" rel="tag">安卓</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%BE%AE%E4%BF%A1/" rel="tag">微信</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%80%BB%E7%BB%93/" rel="tag">总结</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B4%E7%90%86/" rel="tag">整理</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%97%A5%E5%B8%B8/" rel="tag">日常</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%A2%A6%E6%83%B3/" rel="tag">梦想</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%94%9F%E6%B4%BB/" rel="tag">生活</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BD%91%E7%BB%9C/" rel="tag">网络</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BF%90%E7%BB%B4/" rel="tag">运维</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%9D%92%E6%98%A5/" rel="tag">青春</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E9%AB%98%E8%80%83/" rel="tag">高考</a><span class="tag-list-count">1</span></li></ul>
-          </div>
-          <br>
+    
+    
+      <h1 class="title" itemprop="name headline">
+        学习分享｜利用Vue自定义指令（directives）实现全站动画效果
+      </h1>
+      <div class='new-meta-box'>
+        
           
-        </article>
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://dogeoss.grtsinry43.com/img/author.jpeg" class="lazyload" data-srcset="https://dogeoss.grtsinry43.com/img/author.jpeg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">Grtsinry43</p>
+  </a>
+</div>
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-10-12T13:19:25+00:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2024年10月12日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+
+<div class="new-meta-item browse">
+  <a class='notlink'>
+    <p>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      
+      <span data-path="/2024/10/12/vue3-spring-animation/" class="waline-pageview-count">
+        <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
+      </span>
+      
+      <span>次浏览</span>
+    </p>
+  </a>
+</div>
+
+
+          
+        
+          
+            
+<div class="new-meta-item comments-count">
+   
+  
+  <a href="/2024/10/12/vue3-spring-animation/#comments">
+    <i class="fa-solid fa-comment-dots fa-fw"></i>
+    <p>
+      <span data-path="/2024/10/12/vue3-spring-animation/" class="waline-comment-count">
+        <i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i>
+      </span> 
+       
+        <span class="leancloud-comments-count">&nbsp;条评论</span> 
+       
+    </p>
+  </a>
+</div>
+
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-keyboard fa-fw" aria-hidden="true"></i>
+      <p>字数：1.4k 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：6 分钟</p>
+    </a>
+  </div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
     
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <p>最近一直在学习 React 高阶知识，因此对于主页的开发再一次停滞了，主要也是一段时间内没有找到什么灵感，今天空闲时间打开又添加了一些另外的功能，其中包括了折腾了好久的主页加载 Spring （不是那个 Spring 啦）弹簧效果和模糊效果。</p>
+<span id="more"></span>
+
+<p>最后的效果在  <strong><a target="_blank" rel="noopener" href="https://www.grtsinry43.com/">Grtsinry43 的个人主页</a></strong> （最近还会考虑继续更新，哭）</p>
+<h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><p>这里我的网站是使用 Nuxt.js 开发的，使用了<code>&quot;nuxt&quot;: &quot;^3.12.4&quot;,</code>于是就可以使用 Vue.js 的所有语法和写法，当然也包括自定义指令啦！这就为我们的集成添加了可行性</p>
+<h2 id="前置知识"><a href="#前置知识" class="headerlink" title="前置知识"></a>前置知识</h2><p>首先我们要知道 Vue 中的指令是类似<code>v-xxx</code>的形式，比如我们平时常用的 <code>v-model</code> <code>v-for</code> 等等都是其提供的指令，当然也为我们保留了自定义的能力。</p>
+<h2 id="问题引入"><a href="#问题引入" class="headerlink" title="问题引入"></a>问题引入</h2><p>在标准 Vue/Vue+Vite 项目中，其往往位于 <code>/directives</code> 路径，在我们自定义之后在 <code>main.js/main.ts</code> 文件中引入即可</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; createApp &#125; <span class="keyword">from</span> <span class="string">&#x27;vue&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> <span class="title class_">App</span> <span class="keyword">from</span> <span class="string">&#x27;./App.vue&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> scrollSpring <span class="keyword">from</span> <span class="string">&#x27;@/directives/scrollSpring&#x27;</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> app = <span class="title function_">createApp</span>(<span class="title class_">App</span>);</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">directive</span>(<span class="string">&#x27;scroll-spring&#x27;</span>, scrollSpring);</span><br><span class="line"></span><br><span class="line">app.<span class="title function_">mount</span>(<span class="string">&#x27;#app&#x27;</span>);</span><br></pre></td></tr></table></figure>
+
+<p>而在 Nuxt.js项目中，其主 <code>app</code> 对象创建与挂载，以及 SSR 实现等都是由框架统一管理，为了引入里定自定义指令，我们要借助 nuxt 强大的插件系统。</p>
+<h2 id="问题解决"><a href="#问题解决" class="headerlink" title="问题解决"></a>问题解决</h2><p>我们可以参考对应的文档： <a target="_blank" rel="noopener" href="https://nuxt.com.cn/docs/guide/directory-structure/plugins#vue%E6%8C%87%E4%BB%A4">Vue指令</a></p>
+<p>其给出了这样一段示例</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">export default defineNuxtPlugin((nuxtApp) =&gt; &#123;</span><br><span class="line">  nuxtApp.vueApp.directive(&#x27;focus&#x27;, &#123;</span><br><span class="line">    mounted (el) &#123;</span><br><span class="line">      el.focus()</span><br><span class="line">    &#125;,</span><br><span class="line">    getSSRProps (binding, vnode) &#123;</span><br><span class="line">      // 你可以在这里提供SSR特定的props</span><br><span class="line">      return &#123;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>由于我们无需单独处理 SSR 部分，直接引入插件注册指令即可，Nuxt 会自动扫描并加载 <code>/plugins</code> 路径的文件，无需手动添加。</p>
+<p>实现这段动画的大致思路就是，首先所有元素默认 <code>opacity</code> 为 0，并且有向下的位移，当元素移动到视口内即添加标签设置为可见，并恢复位置，当然也可以配合 filter blur 等实现模糊渐显的效果，于是写好如下 css</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">/* 初始状态，元素处于下方且不可见，并带有模糊效果 */</span><br><span class="line">.scroll-item &#123;</span><br><span class="line">  opacity: 0;</span><br><span class="line">  filter: blur(10px); /* 元素模糊 25px */</span><br><span class="line">  transform: translateY(20px); /* 元素初始位移 20px */</span><br><span class="line">  transition: transform 0.5s ease-out, opacity 0.5s ease-out, filter 0.5s ease-out; /* 为 filter 添加动画 */</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* 当元素进入视口时，透明度变为 1，模糊度变为 0，且上移回原位 */</span><br><span class="line">.scroll-in &#123;</span><br><span class="line">  opacity: 1;</span><br><span class="line">  filter: blur(0); /* 模糊效果消失 */</span><br><span class="line">  transform: translateY(0); /* 元素回到原始位置 */</span><br><span class="line">  transition: transform 0.5s ease-out, opacity 0.5s ease-out, filter 0.5s ease-out; /* 确保 filter 也有动画 */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>有了思路之后就写好对应的指令 js<br><code>/plugins/scrollSpring.js</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">// 导出一个 Nuxt 插件</span><br><span class="line">export default defineNuxtPlugin((nuxtApp) =&gt; &#123;</span><br><span class="line">    // 定义一个自定义指令 &#x27;scroll-spring&#x27;</span><br><span class="line">    nuxtApp.vueApp.directive(&#x27;scroll-spring&#x27;, &#123;</span><br><span class="line">        // 当元素被挂载到 DOM 中时调用的钩子</span><br><span class="line">        mounted(el) &#123;</span><br><span class="line">            // 设置 Intersection Observer 的选项</span><br><span class="line">            const options = &#123;</span><br><span class="line">                root: null, // 使用浏览器视口作为根元素</span><br><span class="line">                rootMargin: &#x27;0px&#x27;, // 根元素的边距</span><br><span class="line">                threshold: 0.1 // 交叉的阈值，当 10% 的目标元素在视口内时触发回调</span><br><span class="line">            &#125;;</span><br><span class="line"></span><br><span class="line">            // 观察者回调函数</span><br><span class="line">            const callback = (entries) =&gt; &#123;</span><br><span class="line">                entries.forEach(entry =&gt; &#123;</span><br><span class="line">                    // 如果目标元素与视口相交</span><br><span class="line">                    if (entry.isIntersecting) &#123;</span><br><span class="line">                        // 添加动画类</span><br><span class="line">                        el.classList.add(&#x27;scroll-in&#x27;); </span><br><span class="line">                    &#125; else &#123;</span><br><span class="line">                        // 移出视口时移除动画类</span><br><span class="line">                        el.classList.remove(&#x27;scroll-in&#x27;); </span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;);</span><br><span class="line">            &#125;;</span><br><span class="line"></span><br><span class="line">            // 创建一个 Intersection Observer 实例，并传入回调函数和选项</span><br><span class="line">            const observer = new IntersectionObserver(callback, options);</span><br><span class="line">            // 开始观察当前元素</span><br><span class="line">            observer.observe(el);</span><br><span class="line">        &#125;,</span><br><span class="line">        // 当元素从 DOM 中卸载时调用的钩子</span><br><span class="line">        unmounted(el) &#123;</span><br><span class="line">            // 创建一个空的 Intersection Observer 实例</span><br><span class="line">            const observer = new IntersectionObserver(() =&gt; &#123;&#125;);</span><br><span class="line">            // 停止观察当前元素</span><br><span class="line">            observer.unobserve(el);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>这里我们利用 <code>Intersection Observer</code> ，当元素进入视口触发回调添加类名，移出视口则去掉类名</p>
+<p>接下来我们只要在对应的元素引入就可以啦！<br>注意 <code>scroll-item</code> 和 <code>v-scroll-spring</code> 缺一不可，前者负责决定开始状态，后者是动画和结束效果</p>
+<p>这里简单贴一个代码片段，也可以参考我主页对应的仓库~<br><code>/pages/index.vue</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;slogan font-jb-mono scroll-item&quot; v-scroll-spring&gt;</span><br><span class="line">          &lt;p&gt;Coding,&lt;/p&gt;</span><br><span class="line">          &lt;p&gt;build a better world&lt;/p&gt;</span><br><span class="line">          &lt;p&gt;together!&lt;/p&gt;</span><br><span class="line">        &lt;/div&gt;</span><br><span class="line">        &lt;span class=&quot;slogan-cn scroll-item&quot; v-if=&quot;locale === &#x27;zh&#x27;&quot; v-scroll-spring&gt;&#123;&#123; t(&#x27;slogan.cn&#x27;) &#125;&#125;&lt;/span&gt;</span><br><span class="line">        &lt;br/&gt;</span><br><span class="line">        &lt;div class=&quot;button-container scroll-item&quot; v-scroll-spring&gt;</span><br><span class="line">          &lt;UButton to=&quot;https://github.com/grtsinry43&quot; target=&quot;_blank&quot;</span><br><span class="line">                   icon=&quot;i-grommet-icons:github&quot; style=&quot;vertical-align: -4px&quot;</span><br><span class="line">                   class=&quot;btn-item github-link bg-blue-400 text-black dark:bg-blue-800 dark:text-white&quot;&gt;</span><br><span class="line">            &#123;&#123; t(&#x27;buttons.github&#x27;) &#125;&#125;</span><br><span class="line">          &lt;/UButton&gt;</span><br><span class="line">          &lt;UButton :label=&quot;t(&#x27;buttons.learningLog&#x27;)&quot; color=&quot;gray&quot; class=&quot;btn-item scroll-item&quot; v-scroll-spring&gt;</span><br><span class="line">            &lt;template #trailing&gt;</span><br><span class="line">              &lt;UIcon name=&quot;i-heroicons-arrow-right-20-solid&quot; class=&quot;w-5 h-5 btn-more-icon&quot;/&gt;</span><br><span class="line">            &lt;/template&gt;</span><br><span class="line">          &lt;/UButton&gt;</span><br><span class="line">          &lt;UButton color=&quot;gray&quot; class=&quot;btn-item scroll-item&quot; disabled v-scroll-spring&gt;</span><br><span class="line">            &#123;&#123; t(&#x27;buttons.resume&#x27;) &#125;&#125;</span><br><span class="line">          &lt;/UButton&gt;</span><br><span class="line">        &lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="最后效果"><a href="#最后效果" class="headerlink" title="最后效果"></a>最后效果</h2><p><img src="https://blogoss.grtsinry43.com/uploads/24/10/dfd9b723931112b166843ff4b28d68fa.gif/improved" class="lazyload" data-srcset="https://blogoss.grtsinry43.com/uploads/24/10/dfd9b723931112b166843ff4b28d68fa.gif/improved" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="https://blogoss.grtsinry43.com/uploads/24/10/dfd9b723931112b166843ff4b28d68fa.gif/improved"></p>
+
+  </div>
   
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+        
+  <div class="related_posts">
+    <section class='header'>
+      <i class="fa-solid fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
+    </section>
+    <section class='body'>
+      <div class="vlts-rps"><a class="item" href="/2024/09/18/home-website-refactoring-nuxtjs/" title="折腾记录｜使用 Nuxt.js 重写个人主页，使用 SSR 优化 SEO ，实现一些期待已久的效果" rel="bookmark "><span class="title">折腾记录｜使用 Nuxt.js 重写个人主页，使用 SSR 优化 SEO ，实现一些期待已久的效果</span><span class="excerpt">在 22 年刚创建个人主页的时候，由于我的技术水平不够，只能用一些 wordpress typecho 这种直观的工具，后...</span></a><a class="item" href="/2024/07/03/wx-js-sdk-usage-vue3/" title="学习分享｜Vue3项目中使用微信SDK开发微信网页" rel="bookmark "><span class="title">学习分享｜Vue3项目中使用微信SDK开发微信网页</span><span class="excerpt">最近在开发一个微信 H5 的项目，采用的是 Vue3+FastAPI，正好学习下微信用户登录，api 配置和调用，以及前后...</span></a><a class="item" href="/2024/07/11/202406-frontend-summary/" title="六月初至七月中旬｜前端学习简要总结，生活的小回顾" rel="bookmark "><span class="title">六月初至七月中旬｜前端学习简要总结，生活的小回顾</span><span class="excerpt">在这段时间里我通过完成多个项目，深入学习了前端和全栈开发的技术。主要使用了 Vue3、C++ Web 框架、jwt 鉴权、...</span></a><a class="item" href="/2024/06/09/less-media-variable/" title="问题解决｜使用Less变量和媒体查询实现深浅色模式适配" rel="bookmark "><span class="title">问题解决｜使用Less变量和媒体查询实现深浅色模式适配</span><span class="excerpt">使用Less变量简化css写法，并不影响css变量和媒体查询在深浅模式切换时的效果</span></a><a class="item" href="/2024/06/27/kubernetes-quick-start/" title="学习分享｜Kubernetes快速上手，快速了解及开始使用" rel="bookmark "><span class="title">学习分享｜Kubernetes快速上手，快速了解及开始使用</span><span class="excerpt">最近感觉 K8s 挺火的，也许是时下比较热门的技术栈了，学习过程比较曲折复杂，分享一下自己的学习过程，从快速入门，到一些深...</span></a></div></section></div>
+      
+      <!-- 版权声明组件 -->
+      
+        
+          
+          <div class="copyright license">
+            <div class="license-title">学习分享｜利用Vue自定义指令（directives）实现全站动画效果</div>
+            <div class="license-link"><a href="https://blog.grtsinry43.com/2024/10/12/vue3-spring-animation/">https://blog.grtsinry43.com/2024/10/12/vue3-spring-animation/</a>
+            </div>
+            <div class="license-meta">
+              <div class="license-meta-item">
+                <div class="license-meta-title">本文作者</div>
+                <div class="license-meta-text">Grtsinry43</div>
+              </div>
+              <div class="license-meta-item">
+                <div class="license-meta-title">发布于</div>
+                <div class="license-meta-text">2024年10月12日</div>
+              </div>
+              
+              <div class="license-meta-item">
+                <div class="license-meta-title">更新于</div>
+                <div class="license-meta-text">2024年11月29日</div>
+              </div>
+              
+              
+              <div class="license-meta-item">
+                <div class="license-meta-title">许可协议</div>
+                <div class="license-meta-text"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh#" target="_blank">CC BY-NC-SA 4.0</a></div>
+              </div>
+            </div>
+            <div class="license-statement">署名-非商业性使用-相同方式共享 4.0 国际。</div>
+          </div>
+        
+      
+      <!-- 打赏组件 -->
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-11-29T03:25:20+00:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2024年11月29日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E5%89%8D%E7%AB%AF/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>前端</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Vue-js/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Vue.js</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/JavaScript/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>JavaScript</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Nuxt-js/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>Nuxt.js</p></a></div>
+  <span hidden itemprop="keywords">前端 Vue.js JavaScript Nuxt.js</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://blog.grtsinry43.com/2024/10/12/vue3-spring-animation/&title=学习分享｜利用Vue自定义指令（directives）实现全站动画效果 - Grtsinry43’s Blog&summary=最近一直在学习 React 高阶知识，因此对于主页的开发再一次停滞了，主要也是一段时间内没有找到什么灵感，今天空闲时间打开又添加了一些另外的功能，其中包括了折腾了好久的主页加载 Spring （不是那个 Spring 啦）弹簧效果和模糊效果。"
+          
+          >
+          
+            <img src="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://blog.grtsinry43.com/2024/10/12/vue3-spring-animation/&title=学习分享｜利用Vue自定义指令（directives）实现全站动画效果 - Grtsinry43’s Blog&summary=最近一直在学习 React 高阶知识，因此对于主页的开发再一次停滞了，主要也是一段时间内没有找到什么灵感，今天空闲时间打开又添加了一些另外的功能，其中包括了折腾了好久的主页加载 Spring （不是那个 Spring 啦）弹簧效果和模糊效果。"
+          
+          >
+          
+            <img src="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://blog.grtsinry43.com/2024/10/12/vue3-spring-animation/&title=学习分享｜利用Vue自定义指令（directives）实现全站动画效果 - Grtsinry43’s Blog&summary=最近一直在学习 React 高阶知识，因此对于主页的开发再一次停滞了，主要也是一段时间内没有找到什么灵感，今天空闲时间打开又添加了一些另外的功能，其中包括了折腾了好久的主页加载 Spring （不是那个 Spring 啦）弹簧效果和模糊效果。"
+          
+          >
+          
+            <img src="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        
+        <div class='hoverbox'>
+          <a class='share'><img src="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/wechat.png" class="lazyload" data-srcset="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/wechat.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></a>
+          <div class='target'>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATgAAAE4CAAAAADqFLC2AAADsUlEQVR42u3ay3LcMAwEQP3/Tyf3pFwCBliL2mre7H2IbPkwxuj6Y0XrQgAOHDhwFjhwh8Bd4frp8//+vvq+9DrV19fOCw4cOHDgwIEDdxhcOQDeALUDZQjefX3tvODAgQMHDhw4cIfCVYNoGmy7B+juYxrMb98PDhw4cODAgQP3JXCf2vj2gcGBAwcOHDhw4MBl798KsNWBY3odcODAgQMHDhy4t8KlG9wqoqeBuXuDHmvywYEDBw4cOHDgluC6qxswT/s5Pi84cODAgQMHDtwhcFvrbpBYHTROA/R2UP/vuuDAgQMHDhw4cIfAVQ+cBsbq93YBqgV498a1/3MABw4cOHDgwIF7CK4aGNPXu7ApUDVwTz8PDhw4cODAgQN3Ctz0wb2tweI0QFeD9bhgBwcOHDhw4MCBewlcNeB2i+M0uG7tc+2JTHDgwIEDBw4cuIfhpgGyWxynhXB3gJoG7XIABgcOHDhw4MCBexiuu/GtArs7WEwfLFwL0uDAgQMHDhw4cIfATQPrdHC5VWhvB+7bQSY4cODAgQMHDtzDcFvF86cPXA24aTAGBw4cOHDgwIF7G9w0qKYrHZiODz4dwIIDBw4cOHDgwB0G1w3A6QOF6c8p8DTAgwMHDhw4cODAnQrXDY7V96fg0xvQ/f72dcCBAwcOHDhw4F4Gtz2gnA5Atwvz8o0HBw4cOHDgwIE7BO7TxXH1e7YK8StcZQ9w4MCBAwcOHLhD4NJAuf3A3xZAOiiNC2lw4MCBAwcOHLiH4KaFbTrA3IKvBudpYAcHDhw4cODAgTsVrruBKeDWwDI9RxzMwYEDBw4cOHDgDoPrBtRpoTwdRG4H7fINAAcOHDhw4MCBOwRuO8huBd10UDkdqN7+QYEDBw4cOHDgwB0G1w2wabE8DdrTYnsc6MGBAwcOHDhw4A6D+61iugoSB9RhAX4b+MGBAwcOHDhw4A6H6xbAXfDu9dPPXeH68TrgwIEDBw4cOHCHwE1XHCSXQNPiOr1x4MCBAwcOHDhwp8BtBcQqYLdoTgvmtFAfN/ngwIEDBw4cOHC/DDcNvJ8eMFaBp0EbHDhw4MCBAwfurXBp8JwWzOmANA3eccEODhw4cODAgQP3ZXDdDcSFcHrgYqC+3R84cODAgQMHDtyXwHU3lgbY7iC0O7AEBw4cOHDgwIF7O1w3EKZA3cHj9mA0vj44cODAgQMHDtxhcGmBmw4OU5jxIDIM9uDAgQMHDhw4cKfBWc0gjQAcOHDgLHDgnl1/AfWb/jX2IzD4AAAAAElFTkSuQmCC">
+          </div>
+        </div>
+      
+    
+      
+        <a class="-mob-share-telegram" title="" rel="external nofollow noopener noreferrer noopener"
+          
+            target="_blank" href="https://t.me/share/url?url=https://blog.grtsinry43.com/2024/10/12/vue3-spring-animation/&text=学习分享｜利用Vue自定义指令（directives）实现全站动画效果 - Grtsinry43’s Blog"
+          
+          >
+          
+            <img src="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/telegram.png" class="lazyload" data-srcset="https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/logo/128/telegram.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2024/09/18/home-website-refactoring-nuxtjs/'>
+          <p class='title'>折腾记录｜使用 Nuxt.js 重写个人主页，使用 SSR 优化 SEO ，实现一些期待已久的效果<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>在 22 年刚创建个人主页的时候，由于我的技术水平不够，只能用一些 wordpress typecho 这种直观的工具，后来因为换域名等等一系列的问题就被搁置了…再后来为了过备案，用图形化工具和...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/2024/10/12/vue3-spring-animation/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
+    
+      <p cst>在这里留下你的评论吧～</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -3056,9 +3386,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
 
 
-  <div class="">
-    <!-- pjax占位 -->
-  </div>
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%8E%AF%E5%A2%83%E5%87%86%E5%A4%87"><span class="toc-number">1.</span> <span class="toc-text">环境准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E7%BD%AE%E7%9F%A5%E8%AF%86"><span class="toc-number">2.</span> <span class="toc-text">前置知识</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%E5%BC%95%E5%85%A5"><span class="toc-number">3.</span> <span class="toc-text">问题引入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3"><span class="toc-number">4.</span> <span class="toc-text">问题解决</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E5%90%8E%E6%95%88%E6%9E%9C"><span class="toc-number">5.</span> <span class="toc-text">最后效果</span></a></li></ol>
+    </div>
+  </section>
 
   
 
@@ -3093,13 +3433,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -4437,7 +4778,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Grtsinry43’s Blog","url":"https://blog.grtsinry43.com/","logo":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Grtsinry43","image":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.grtsinry43.com/","sameAs":["https://github.com/volantis-x"],"description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.grtsinry43.com/","name":"Grtsinry43’s Blog"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Grtsinry43’s Blog","url":"https://blog.grtsinry43.com/","keywords":"代码,开发,生活,折腾,写作","description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待","author":{"@type":"Person","name":"Grtsinry43","image":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.grtsinry43.com/","description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待"},"publisher":{"@type":"Organization","name":"Grtsinry43’s Blog","url":"https://blog.grtsinry43.com/","logo":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.grtsinry43.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.grtsinry43.com/tags/index.html"},"author":{"@type":"Person","name":"Grtsinry43","image":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.grtsinry43.com/"},"publisher":{"@type":"Organization","name":"Grtsinry43’s Blog","logo":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://blog.grtsinry43.com/tags/index.html","wordCount":0,"datePublished":"2024-11-29T03:26:20.565Z","dateModified":"2024-11-29T03:26:20.565Z","image":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Grtsinry43’s Blog","url":"https://blog.grtsinry43.com/","logo":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Grtsinry43","image":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.grtsinry43.com/","sameAs":["https://github.com/volantis-x"],"description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://blog.grtsinry43.com/","name":"Grtsinry43’s Blog"}},{"@type":"ListItem","position":2,"item":{"@id":"https://blog.grtsinry43.com/categories/技术学习/","name":"技术学习"}},{"@type":"ListItem","position":3,"item":{"@id":"https://blog.grtsinry43.com/2024/10/12/vue3-spring-animation/","name":"学习分享｜利用Vue自定义指令（directives）实现全站动画效果"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Grtsinry43’s Blog","url":"https://blog.grtsinry43.com/","keywords":"代码,开发,生活,折腾,写作","description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待","author":{"@type":"Person","name":"Grtsinry43","image":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.grtsinry43.com/","description":"一个目标全栈开发的大一学生，比较内向喜欢写写代码看看书，听听音乐记录下生活，写作，开发，生活，简单写写的博客。总之岁月漫长，然而值得等待"},"publisher":{"@type":"Organization","name":"Grtsinry43’s Blog","url":"https://blog.grtsinry43.com/","logo":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://blog.grtsinry43.com?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"学习分享｜利用Vue自定义指令（directives）实现全站动画效果","description":"最近一直在学习 React 高阶知识，因此对于主页的开发再一次停滞了，主要也是一段时间内没有找到什么灵感，今天空闲时间打开又添加了一些另外的功能，其中包括了折腾了好久的主页加载 Spring （不是那个 Spring 啦）弹簧效果和模糊效果。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.grtsinry43.com/2024/10/12/vue3-spring-animation/"},"author":{"@type":"Person","name":"Grtsinry43","image":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://blog.grtsinry43.com/"},"publisher":{"@type":"Organization","name":"Grtsinry43’s Blog","logo":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://blog.grtsinry43.com/2024/10/12/vue3-spring-animation/","wordCount":121,"datePublished":"2024-10-12T13:19:25.259Z","dateModified":"2024-11-29T03:25:20.877Z","articleSection":"技术学习","keywords":"前端,Vue.js,JavaScript,Nuxt.js","image":{"@type":"ImageObject","url":"https://dogeoss.grtsinry43.com/volantis-static/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
